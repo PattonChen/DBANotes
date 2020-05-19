@@ -1,0 +1,858 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+    
+    
+      
+        <title>HCIP-GaussDB-OLTP 华为数据库高级工程师认证培训 - MySkys</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#hcip-gaussdb-oltp" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="MySkys" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MySkys
+            </span>
+            <span class="md-header-nav__topic">
+              
+                HCIP-GaussDB-OLTP 华为数据库高级工程师认证培训
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="MySkys" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MySkys
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Database
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Database
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Mysql
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Mysql
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Alter Database.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Alter View.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Create Table 2.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateDatabase.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateIndex.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateTable.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateView.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Delete.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Funtion.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Instert&Update.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/MySQL指定账号加密方式的方法.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Select/" title="Select" class="md-nav__link">
+      Select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Untitled.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/Mysql/" title="Mysql" class="md-nav__link">
+      Mysql
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/Mysql_OCP/" title="Mysql OCP" class="md-nav__link">
+      Mysql OCP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oracle/Oracle/" title="Oracle" class="md-nav__link">
+      Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PostgeSql/PostgeSql.md" title="PostgeSql" class="md-nav__link">
+      PostgeSql
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Life
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Life
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/" title="乙醛脱氢酶" class="md-nav__link">
+      乙醛脱氢酶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒/" title="酒" class="md-nav__link">
+      酒
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/" title="酒的误区" class="md-nav__link">
+      酒的误区
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/" title="酒精中毒" class="md-nav__link">
+      酒精中毒
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    培训时长
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    课程内容
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    培训方式
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="hcip-gaussdb-oltp">HCIP-GaussDB-OLTP 华为数据库高级工程师认证培训</h1>
+<h4 id="_1">培训时长</h4>
+<ul>
+<li>12工作日</li>
+</ul>
+<h2 id="_2">课程内容</h2>
+<p>第一章 GaussDB OLTP体系结构（0.25天）</p>
+<ul>
+<li>产品简介</li>
+<li>数据库系统架构</li>
+<li>支持的部署形态</li>
+<li>内存架构</li>
+<li>文件架构</li>
+<li>线程架构</li>
+<li>主要特性介绍</li>
+<li>Paxos两地三中心高可用</li>
+<li>分布式高扩展</li>
+<li>分布式事务强一致</li>
+</ul>
+<p>第二章 数据库环境搭建（0.75天）</p>
+<ul>
+<li>安装环境要求</li>
+<li>安装规划</li>
+<li>安装环境准备</li>
+<li>数据库安装</li>
+<li>服务端安装</li>
+<li>
+<p>客户端安装</p>
+</li>
+<li>
+<p>数据库工具</p>
+</li>
+<li>工具概述</li>
+<li>客户端工具</li>
+<li>DS</li>
+<li>zsql</li>
+<li>数据库管理工具</li>
+<li>图形化运维工具DM</li>
+<li>数据库升级</li>
+<li>创建数据库</li>
+<li>数据库迁移</li>
+</ul>
+<p>第三章 SQL高级特性（0.5天）</p>
+<ul>
+<li>数据类型</li>
+<li>SQL高级语法</li>
+<li>表达式</li>
+<li>条件</li>
+<li>运算符</li>
+<li>通配符</li>
+<li>常量</li>
+<li>格式化</li>
+<li>函数</li>
+<li>PLSQL</li>
+</ul>
+<p>第四章 数据库管理（3.5天）</p>
+<ul>
+<li>数据库实例管理（2h）</li>
+<li>概述</li>
+<li>数据库参数</li>
+<li>数据库启动</li>
+<li>数据库关闭</li>
+<li>系统日志查看</li>
+<li>相关视图</li>
+<li>数据库连接管理（1h</li>
+<li>数据库监听</li>
+<li>数据库连接机制</li>
+<li>数据库连接方式</li>
+<li>驱动</li>
+<li>客户端</li>
+<li>数据库连接池功能</li>
+<li>会话管理</li>
+<li>数据库存储管理（0.5天）</li>
+<li>数据库存储结构</li>
+<li>表空间和数据文件物理结构</li>
+<li>预置表空间</li>
+<li>自定义表空间及管理</li>
+<li>表空间相关视图</li>
+<li>文件管理（1h）</li>
+<li>参数文件</li>
+<li>控制文件</li>
+<li>Redo日志文件</li>
+<li>在线日志</li>
+<li>归档日志</li>
+<li>数据库用户管理（4h）</li>
+<li>数据库用户、角色、权限</li>
+<li>概念介绍 </li>
+<li>系统预置用户介绍</li>
+<li>系统预置角色介绍</li>
+<li>自定义用户</li>
+<li>自定义角色</li>
+<li>相关视图</li>
+<li>权限管理</li>
+<li>系统权限</li>
+<li>对象权限</li>
+<li>授权</li>
+<li>收回</li>
+<li>Profile</li>
+<li>Profile定义和使用场景</li>
+<li>系统默认Profile</li>
+<li>自定义Profile</li>
+<li>数据库对象管理（4h）</li>
+<li>支持的数据库对象</li>
+<li>对象管理</li>
+<li>Table</li>
+<li>Index</li>
+<li>分区</li>
+<li>View</li>
+<li>Sequence</li>
+<li>存储过程</li>
+<li>自定义函数</li>
+<li>同义词</li>
+<li>触发器</li>
+<li>大对象</li>
+<li>数据库对象相关视图</li>
+<li>数据并发管理（1天）</li>
+<li>并发概述</li>
+<li>什么是并发</li>
+<li>事务</li>
+<li>为什么要做并发管理</li>
+<li>常见并发场景</li>
+<li>并发机制</li>
+<li>回滚段</li>
+<li>MVCC机制</li>
+<li>锁/死锁</li>
+<li>相关视图</li>
+</ul>
+<p>第五章 数据库安全管理（0.5天）</p>
+<ul>
+<li>数据库安全功能总览</li>
+<li>访问控制</li>
+<li>服务器连接配置</li>
+<li>客户端连接方法</li>
+<li>连接安全认证</li>
+<li>使用SSL连接</li>
+<li>用户权限管理</li>
+<li>安全审计</li>
+<li>审计开关</li>
+<li>查看、删除审计日志</li>
+<li>推荐审计日志配置</li>
+</ul>
+<p>第六章 数据库运维与调优（3.5天）</p>
+<ul>
+<li>系统监控（0.5天）</li>
+<li>系统监控指标</li>
+<li>监控告警</li>
+<li>监控数据库状态</li>
+<li>监控日志</li>
+<li>监控相关视图</li>
+<li>备份恢复管理（1天）</li>
+<li>备份恢复概述</li>
+<li>备份</li>
+<li>全量备份</li>
+<li>增量备份</li>
+<li>恢复</li>
+<li>全量恢复</li>
+<li>PITR</li>
+<li>数据导入导出</li>
+<li>exp</li>
+<li>imp</li>
+<li>dump</li>
+<li>load</li>
+<li>回收站</li>
+<li>闪回</li>
+<li>性能调优（1.5天）</li>
+<li>性能瓶颈分类概览</li>
+<li>性能诊断方式概览</li>
+<li>系统调优</li>
+<li>内存管理方式</li>
+<li>等待事件</li>
+<li>WSR报告详解</li>
+<li>SQL调优</li>
+<li>执行计划介绍</li>
+<li>执行计划查看与解读</li>
+<li>RBO/CBO机制</li>
+<li>统计信息管理</li>
+<li>SQL性能定位</li>
+<li>SQL调优手段</li>
+<li>Hint介绍</li>
+<li>性能相关视图</li>
+<li>故障处理（0.5天）</li>
+<li>常见故障场景</li>
+<li>故障处理流程</li>
+<li>故障定位/信息收集</li>
+<li>应急处理手段</li>
+<li>常见故障案例</li>
+</ul>
+<p>第七章 数据库高可用特性 （0.5天）</p>
+<ul>
+<li>高可用功能介绍</li>
+<li>主备HA</li>
+<li>主备HA搭建</li>
+<li>HA修复</li>
+<li>主备切换</li>
+<li>主备状态查询</li>
+<li>数据对比</li>
+<li>常见故障处理</li>
+<li>逻辑复制</li>
+<li>逻辑复制原理</li>
+<li>应用场景</li>
+<li>逻辑复制配置</li>
+<li>常见故障处理</li>
+</ul>
+<p>第八章 数据库分布式Sharding （1.5天）</p>
+<ul>
+<li>分布式集群安装部署（2h）</li>
+<li>分布式架构简介</li>
+<li>安装部署</li>
+<li>升级</li>
+<li>卸载</li>
+<li>日常运维（2h）</li>
+<li>集群管理</li>
+<li>启停集群</li>
+<li>参数修改</li>
+<li>日志管理</li>
+<li>日志分类</li>
+<li>日志管理</li>
+<li>日常监控</li>
+<li>告警</li>
+<li>状态查询</li>
+<li>日志</li>
+<li>安全管理</li>
+<li>分布式安全管理与单机差异</li>
+<li>集群高可用（2h）</li>
+<li>主备</li>
+<li>Paxos</li>
+<li>故障处理（1h）</li>
+<li>性能调优&amp;设计理念（1.5h）</li>
+<li>分布式设计理念</li>
+<li>集群与单机语法差异</li>
+<li>性能调优</li>
+</ul>
+<p>第九章 综合实验（1天）</p>
+<ul>
+<li>安装（单机）</li>
+<li>备份恢复</li>
+<li>创建数据库</li>
+<li>提供备份集供学员将数据恢复至自己创建的库</li>
+<li>查询SQL调优</li>
+<li>单机扩成主备</li>
+</ul>
+<h2 id="_3">培训方式</h2>
+<ul>
+<li>理论授课、上机实习</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8e03edeb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

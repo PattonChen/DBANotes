@@ -1,0 +1,665 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+    
+    
+      
+        <title>模拟试卷 - MySkys</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="MySkys" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MySkys
+            </span>
+            <span class="md-header-nav__topic">
+              
+                模拟试卷
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="MySkys" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MySkys
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Database
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Database
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Mysql
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Mysql
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Alter Database.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Alter View.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Create Table 2.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateDatabase.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateIndex.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateTable.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/CreateView.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Delete.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Funtion.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Instert&Update.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/MySQL指定账号加密方式的方法.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Select/" title="Select" class="md-nav__link">
+      Select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/basic/Untitled.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/Mysql/" title="Mysql" class="md-nav__link">
+      Mysql
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mysql/Mysql_OCP/" title="Mysql OCP" class="md-nav__link">
+      Mysql OCP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oracle/Oracle/" title="Oracle" class="md-nav__link">
+      Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PostgeSql/PostgeSql.md" title="PostgeSql" class="md-nav__link">
+      PostgeSql
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Life
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Life
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/" title="乙醛脱氢酶" class="md-nav__link">
+      乙醛脱氢酶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒/" title="酒" class="md-nav__link">
+      酒
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/" title="酒的误区" class="md-nav__link">
+      酒的误区
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/" title="酒精中毒" class="md-nav__link">
+      酒精中毒
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>模拟试卷</h1>
+                
+                <p>1.（多选） GaussDB 100的主要特点有哪些？
+   A. 极致性能
+   B. 安全可靠
+   C. 简单易用
+   D. 是NoSQL数据库</p>
+<p>2.（单选） GaussDB 100支持从Oracle进行数据迁移。
+   A. TRUE
+   B. FALSE</p>
+<p>3.（多选） 下面哪些属于GaussDB 100数据库可配置的磁盘空间？
+   A. binary CONTROLFILE
+   B. LOGFILE
+   C. system tablespace DATAFILE
+   D. undo tablespace DATAFILE
+   E. default tablespace DATAFILE</p>
+<p>4.（单选） DataSync数据迁移工具目前支持以下哪个源数据库？
+   A. Sybase
+   B. SQL Server
+   C. Oracle
+   D. 以上全都正确</p>
+<p>5.（单选） 假设有四个用户gaussdba,omm,sys,cheng，默认哪个用户有权限执行WSR操作？
+   A. gaussdba
+   B. omm
+   C. sys
+   D. cheng</p>
+<p>6.（单选） 某用户想从表A选择行对表B的数据进行更新或插入，则可以使用哪种语法？
+   A. PURGE
+   B. WITH AS
+   C. MERGE
+   D. REPLACE</p>
+<p>7.（单选） 业务运行阶段，有大量会话连接数据库，此时如果需要快速停止数据库，应当使用shutdown（normal模式）命令来关闭数据库。
+   A. TRUE
+   B. FALSE</p>
+<p>8.（多选） 以root用户身份登录GaussDB 100所在服务器，修改服务器和客户端密钥的权限。需要将哪些证书拷贝到/home/gaussdba/app目录下？
+   A. server.crt
+   B. server.key
+   C. cacert.key
+   D. cacert.pem</p>
+<p>9.（多选） 以下属于实例启动模式的有？
+   A. nomount
+   B. mount
+   C. open
+   D. load</p>
+<p>10.（单选） A用户需要将获得的对象权限再次授予其他用户，那么当数据库管理员在给A用户赋权时应添加下列哪个属性？
+   A. WITH GRANT OPTION
+   B. WITH ADMIN OPTION
+   C. WITH OBJECT OPTION
+   D. WITH TRANSMIT OPTION</p>
+<p>11.（多选） 某数据库想对权限进行规划，那么以下建议中，正确的有？
+   A. 系统权限可以任意赋予给用户。
+   B. 从安全性考虑，系统权限应该分别赋予可信赖的用户。
+   C. 在实际工作中，如果有两个以上的用户具有相同的对象权限，则建议将这几个用户规划为一个角色，并将这些权限赋予此角色。
+   D. 系统管理员可以将某些数据库对象的所有权限赋予某个用户，也可以将某些数据库对象的部分权限分别赋予不同的用户。</p>
+<p>12.（单选） 建议系统管理员和普通用户都要定期修改自己的帐户密码的密码安全策略为？
+   A. 密码重用
+   B. 密码复杂度
+   C. 密码有效期限
+   D. 密码修改</p>
+<p>13.（单选） 物理恢复的正确流程包含以下四步，恢复一个主机的正确流程是
+1.RECOVER DATABASE ……
+2.RESTORE DATABASE ……
+3.ALTER DATABASE OPEN
+4.ALTER DATABASE CONVERT TO PHYSICAL STANDBY MOUNT
+   A. 1-&gt;2-&gt;3-&gt;4
+   B. 2-&gt;1-&gt;4-&gt;3
+   C. 2-&gt;1-&gt;3
+   D. 1-&gt;2-&gt;4-&gt;3</p>
+<p>14.（单选） 当SQL需要访问的数据块正在被另一个会话从磁盘读到内存中将会导致以下哪一个等待事件的发生？
+   A. db file sequential read
+   B. log file sync
+   C. read by other session
+   D. buffer busy wait</p>
+<p>15.（多选） 数据库报如下错误："archive command failed with exit code 1",引起这个错误的原因可能有哪些？
+   A. 归档日志不存在
+   B. 归档日志的权限被改变，不满足权限要求
+   C. 归档日志的目录被错误修改
+   D. 归档日志太多</p>
+<p>16.（单选） GaussDB 100主备HA中，如果发生异常，可以通过"ALTER DATABASE FAILOVER"命令来让备机升主。
+   A. TRUE
+   B. FALSE</p>
+<p>17.（多选） 逻辑复制工具目前通过jdbc的回放sql的方式支持向哪些数据库复制数据？
+   A. GaussDB
+   B. MySQL
+   C. Oracle
+   D. SQL Server</p>
+<p>18.（单选） 告警等级包括“高”、“中”、“低”、“信息”。
+   A. TRUE
+   B. FALSE</p>
+<p>19.（单选） Z-Paxos复制协议具有优先级自仲裁能力，其不包含以下哪种仲裁能力？
+   A. 外部仲裁
+   B. 随机仲裁
+   C. 动态优先级仲裁
+   D. 角色仲裁</p>
+<p>20.（单选） 下列关于协同调度节点CN(Coordinator Node)的描述，哪一项是不正确的？
+   A. 负责接收来自应用的访问请求，并向客户端返回执行结果。
+   B. 生成最优的执行计划，并将算子任务调度到各个DN节点上执行。
+   C. 当客户端连到CN创建表时，建表语句中必须带有分片信息。
+   D. 考虑高可用，CN的主和备需要分散部署在不同的物理节点上。</p>
+<p>答案：
+/ 1 ABC  / 2 A  / 3 ABCDE  / 4 D  / 5 C  / 6 C  / 7 B  / 8 ABD  / 9 ABC  / 10 A  / 11 BCD  / 12 D  / 13 C  / 14 C  / 15 ABC  / 16 A  / 17 AC  / 18 A  / 19 D  / 20 D  </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8e03edeb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

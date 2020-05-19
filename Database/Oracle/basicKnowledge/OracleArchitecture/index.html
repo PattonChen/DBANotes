@@ -1,0 +1,1274 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+    
+    
+      
+        <title>OracleArchitecture - MySkys</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#oracle" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="MySkys" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MySkys
+            </span>
+            <span class="md-header-nav__topic">
+              
+                OracleArchitecture
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="MySkys" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MySkys
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Database
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Database
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Mysql
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Mysql
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Alter Database.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Alter View.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Create Table 2.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/CreateDatabase.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/CreateIndex.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/CreateTable.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/CreateView.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Delete.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Funtion.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Instert&Update.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/MySQL指定账号加密方式的方法.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Select/" title="Select" class="md-nav__link">
+      Select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/basic/Untitled.md" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/Mysql/" title="Mysql" class="md-nav__link">
+      Mysql
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Mysql/Mysql_OCP/" title="Mysql OCP" class="md-nav__link">
+      Mysql OCP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oracle/" title="Oracle" class="md-nav__link">
+      Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../PostgeSql/PostgeSql.md" title="PostgeSql" class="md-nav__link">
+      PostgeSql
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Life
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Life
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/" title="乙醛脱氢酶" class="md-nav__link">
+      乙醛脱氢酶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Life/GeneralEducation/Wine/酒/" title="酒" class="md-nav__link">
+      酒
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Life/GeneralEducation/Wine/酒的误区/" title="酒的误区" class="md-nav__link">
+      酒的误区
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Life/GeneralEducation/Wine/酒精中毒/" title="酒精中毒" class="md-nav__link">
+      酒精中毒
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 物理结构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2tablespacesegmentextentblock" class="md-nav__link">
+    2.逻辑结构（Tablespace，Segment，Extent，Block）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tablespace" class="md-nav__link">
+    1. Tablespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-segment" class="md-nav__link">
+    2. Segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-extent" class="md-nav__link">
+    3. Extent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4block" class="md-nav__link">
+    4.Block
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sgapga" class="md-nav__link">
+    3.内存结构 (SGA,PGA)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sga" class="md-nav__link">
+    SGA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pga" class="md-nav__link">
+    PGA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 后台进程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dbwr-database-writer" class="md-nav__link">
+    DBWR Database Writer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lgwr-log-writer" class="md-nav__link">
+    LGWR Log writer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smon-system-monitor" class="md-nav__link">
+    SMON System Monitor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pmon-process-monitor" class="md-nav__link">
+    PMON Process Monitor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ckpt-checkpoint-process" class="md-nav__link">
+    CKPT Checkpoint process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scn" class="md-nav__link">
+    5. SCN
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>[toc]</p>
+<h1 id="oracle">Oracle 基础架构知识</h1>
+<h2 id="1">1. 物理结构</h2>
+<p>Oracle的基本结构：</p>
+<p><img alt="image-20200504010308352" src="../OracleArchitecture.assets/image-20200504010308352.png" /></p>
+<p>Oracle的物理结构是由：</p>
+<ol>
+<li>ControlFile</li>
+<li>DataFile</li>
+<li>Redo Files</li>
+<li>Spfile</li>
+<li>Archive log files</li>
+<li>
+<p>password File (pwdSID.ora)</p>
+</li>
+<li>
+<p>依据使用时是否被调入内存可分两类：</p>
+</li>
+<li>1.数据库文件：</li>
+</ol>
+<blockquote>
+<ol>
+<li>Control file </li>
+</ol>
+<p>含有维护与验证数据库完整性的必要信息(SCN…,识别数据文件与redo log files,每个库至少一个以上Control file)，控制文件 includes：
+- 数据库名 (db_name)
+- tablespace info 
+- Names and location of associated data file and redo log files 
+- All names and positions of redo log files 
+- The timestamp of th database creation
+- The current log file sequence number
+- Checkpoint information
+- 关于redo日志和归档的当前状态信息</p>
+<ol>
+<li>Data files </li>
+</ol>
+<p>存储数据的文件。代表根据使用的磁盘空间与数量决定整个数据库的容积。</p>
+<ol>
+<li>Redo log files </li>
+</ol>
+<p>含有数据库所有的更改记录，以防故障时启用数据恢复。</p>
+<p>一个数据库至少一对（两个）redo log file。</p>
+<ol>
+<li>Trace files</li>
+</ol>
+<p>在Instance中运行的每个后台进程都有一个Trace file 与之相连。</p>
+<p>记录后台进程遇到的重大事件的信息</p>
+<ol>
+<li>Alert files</li>
+</ol>
+<p>特殊的跟踪文件，每个数据库一个跟踪文件同步记载数据库的消息和错误。</p>
+</blockquote>
+<ul>
+<li>2.非数据库文件:</li>
+</ul>
+<blockquote>
+<ol>
+<li>parameter file (spfileSID.ora) </li>
+</ol>
+<p>包括大量影响实例功能的设定，如：</p>
+<ul>
+<li>Control file 的定位</li>
+<li>Oracle用来缓存从磁盘上读取的数据的内存数量</li>
+<li>
+<p>默认优化程序的选择和数据库相关，执行两个重要的功能，为数据库指出控制文件和指出归档日志的目标。</p>
+</li>
+<li>
+<p>password file ( pwdSID.ora )</p>
+</li>
+</ul>
+<p>认证哪些用户有启动和关闭Oracle实例。</p>
+</blockquote>
+<p>归档文件：</p>
+<ul>
+<li>Redo log file的脱机副本，这些副本可能对于从介质失败中进行恢复很是必要。</li>
+</ul>
+<h2 id="2tablespacesegmentextentblock">2.逻辑结构（Tablespace，Segment，Extent，Block）</h2>
+<h3 id="1-tablespace">1. Tablespace</h3>
+<p>基本逻辑结构，一系列数据文件的集合。</p>
+<h3 id="2-segment">2. Segment</h3>
+<p>对象在数据库占用的空间</p>
+<h3 id="3-extent">3. Extent</h3>
+<p>为数据一次性预留的一个 较大的存储空间。</p>
+<h3 id="4block">4.Block</h3>
+<p>Oracle最基本的存储单位，在建立数据库时候被指定。</p>
+<h2 id="3-sgapga">3.内存结构 (SGA,PGA)</h2>
+<h3 id="sga">SGA</h3>
+<ul>
+<li>存储数据库信息的内存区域，且为数据库进程所共享。</li>
+<li>包含数据库的数据与控制信息。</li>
+<li>在Oracle服务器所驻留的计算机的物理内存中分配出来。实际内存不够，向虚拟内存写入。</li>
+</ul>
+<h3 id="pga">PGA</h3>
+<ul>
+<li>包含单个服务器进程或单个后台进程的数据与控制信息。</li>
+<li>与多个进程共享信息的SGA相反，PGA只被一个进程使用</li>
+<li>PGA创建进程时分配，终止进程时回收内存。</li>
+</ul>
+<h2 id="4">4. 后台进程</h2>
+<ol>
+<li>
+<h3 id="dbwr-database-writer"><strong>DBWR Database Writer</strong></h3>
+</li>
+<li>
+<p>将数据库的缓存区高速缓存的更改的数据写入到数据文件</p>
+</li>
+<li>
+<h3 id="lgwr-log-writer"><strong>LGWR</strong> Log writer</h3>
+</li>
+<li>
+<p>将REDO日志缓冲区的脏数据写入到在线redo日志文件</p>
+</li>
+<li>
+<h3 id="smon-system-monitor"><strong>SMON</strong> System Monitor</h3>
+</li>
+<li>
+<p>检查数据库的一致性，必要时在数据<strong>Open</strong>j时修复数据数据库</p>
+</li>
+<li>
+<h3 id="pmon-process-monitor"><strong>PMON</strong> Process Monitor</h3>
+</li>
+<li>
+<p>负责在一个Oracle进程失败时清理资源</p>
+</li>
+<li>
+<h3 id="ckpt-checkpoint-process"><strong>CKPT</strong> Checkpoint process</h3>
+</li>
+<li>
+<p>负责在每当缓冲区高速缓存中的更改永久地记录到数据库中时，更新<strong>control file</strong>与<strong>data file</strong>的数据库状态信息。</p>
+</li>
+<li>在检查点进程负责在检查点向<strong>DBWn</strong>发出信号， 更新<strong>control file</strong>与<strong>data file</strong>,重新指示出最新的检查点。</li>
+<li>默认情况下，init.ora中CHECKPOINT_PROCESS=FALSE,意为不启用CKPT进程的，那这任务是由LGWR完成。</li>
+<li>
+<p>由于LGWR在数据库有许多数据文件时，性能会明显降低，需要启用CKPT，CKPT不写块到磁盘，而由DBWR负责完成。</p>
+</li>
+<li>
+<p>ACHn</p>
+</li>
+<li>
+<p>每次日志时，将已满的日志组进行备份或归档</p>
+</li>
+<li>
+<p>服务进程</p>
+</li>
+<li>
+<p>用户进程服务</p>
+</li>
+<li>
+<p>用户进程</p>
+</li>
+<li>
+<p>客户端，负责将用户的SQL语句转递给服务进程，并从服务器段拿回查询数据。</p>
+</li>
+<li></li>
+</ol>
+<h2 id="5-scn">5. SCN</h2>
+<ul>
+<li>一个由系统内部维护的序列号。</li>
+<li>当系统需要更新的时候自动更新，是系统中维护数据的一致性和顺序恢复的重要标志。</li>
+</ul>
+<h1 id="oracle_1">Oracle架构实现原理</h1>
+<p>一般所说的Oracle是指Oracle的RDBMS(Relational databases Management system )，一套Oracle数据库管理系统。也称Oracle Server</p>
+<p>Oracle Server = Instance + Database （两者各独立）</p>
+<p>Instance = memory pool + backgroup process</p>
+<p>Database = Data Files + Control file + Redo log files</p>
+<p>所以 Oracle Server = 内存池+ 后台进程 + 数据文件 + 控制 + 日志文件</p>
+<p>Oracle Server 与 Database 是1：N，每个Database各自独立，各自挺有属于自己的全套相关文件。</p>
+<p>Database由一些物理文件组成，三给表存储在Database中，但不能直接读取，需要通过OracleInstance才能访问Database，<strong>Instance连接Database只能1：1，Database可以被N个Instance连接。</strong></p>
+<h2 id="oracle-oracle">Oracle架构抽象： Oracle体系=内存架构 + 进程架构 + 存储架构</h2>
+<p><img alt="image-20200504153132694" src="../OracleArchitecture.assets/image-20200504153132694.png" /></p>
+<h3 id="_1">内存架构</h3>
+<ol>
+<li>
+<p>Memory Stuctures</p>
+</li>
+<li>
+<p>SGA</p>
+<ol>
+<li>Shared Pool<ol>
+<li>Library Cache</li>
+<li>Data Dictionary Cache</li>
+</ol>
+</li>
+<li>Database Buffer Cache</li>
+<li>Java Pool</li>
+<li>Redo Log Buffer</li>
+<li>Large Pool</li>
+</ol>
+</li>
+<li>
+<p>Background Process Structures</p>
+</li>
+</ol>
+<p>PMON ,SMON,DBWR,LGWR,CKPT,Others</p>
+<ol>
+<li>系统全局区（SGA）</li>
+</ol>
+<p><img alt="image-20200504154841579" src="../OracleArchitecture.assets/image-20200504154841579.png" /></p>
+<p>SGA的默认Size 由Oracle安装时根据OS的sysctl.conf决定</p>
+<pre><code class="shell">kernel.shmall = 2097152
+kernel.shmmax = 2147483648
+kernel.shmmni = 4096
+kernel.sem = 250 32000 100 128
+net.ipv4.ip_local_port_range = 1024 65000
+net.core.rmem_default = 1048576
+net.core.rmem_max = 1048576
+net.core.wmem_default = 262144
+net.core.wmem_max = 262144
+</code></pre>
+
+<p>检查SGA正使用的大小</p>
+<pre><code class="mysql">select * from v$sga;
+NAME              VALUE
+-------------------- ----------
+Fixed Size      2022144
+Variable Size         503317760
+Database Buffers     1627389952
+Redo Buffers           14753792
+SQL&gt; show sgaTotal 
+System Global Area 2147483648 bytes    
+ #对应kernel.shmmax = 2147483648
+Fixed Size          2022144 bytes
+Variable Size         503317760 bytes
+Database Buffers     1627389952 bytes
+Redo Buffers           14753792 bytes
+</code></pre>
+
+<p>SGA在Instance启动时被分配，关闭时被释放。</p>
+<p>一定范围内自动响应DBA指令</p>
+<p>SGA结构：</p>
+<ol>
+<li>
+<p>Shared Pool</p>
+</li>
+<li>
+<p>Library Cache</p>
+</li>
+<li>
+<p>Data Dictionary Cache</p>
+</li>
+<li>
+<p>Database Buffer Cache （高速缓存缓冲区）</p>
+</li>
+</ol>
+<p>执行SQL的区域。</p>
+<ul>
+<li>执行SQL不直接对磁盘的数据文件更改操作。</li>
+<li>复制数据文件到高速缓存缓冲区（相当于该SQL相关的数据文件副本），再去更改高速缓存缓冲区的数据块，这些数据块副本会保留一段时间，直到其占用的缓冲区被另一个数据库覆盖为止（缓冲区Size有限）</li>
+<li>查数时，为拉高执行效率，查数据也要经过缓存。Session建立时，会计算出那些数据块包含关键的<strong>行</strong>，将它们复制到缓冲区来缓存。此后，相关的关键行会传输到Session的PGA进行进一步处理。这些数据也会在数据库缓存区缓存一段时间。<strong>频繁访问的数据缓存于数据库缓冲区缓存中，目的是减少磁盘I/O的需要</strong></li>
+<li>当缓冲区的数据块与磁盘的数据块不一致时，此时这些称为“脏缓冲区”，这些数据块副本一定要写入到磁盘数据文件中。</li>
+</ul>
+<p>数据库缓冲区缓存的大小依据：</p>
+<ol>
+<li>缓存就足够大。以便缓存所有被频繁访问的数据块。过大，磁盘I/O次数会过多。</li>
+<li>不能太大。防止一些极少访问的数据块也一并复制到缓存中，增加缓存区的搜索时间。、</li>
+</ol>
+<p>调整DB_CACHE_SIZE大小：</p>
+<ol>
+<li>
+<p>查SGA大小。因为DB_CACHE_SIZE受SGA影响</p>
+<p><code>sql
+  show parameter sga_max_size</code></p>
+</li>
+<li>
+<p>查SHARED_POOL_SIZE大小</p>
+<p><code>sql
+  show parameter shared_pool_size</code></p>
+</li>
+<li>
+<p>计算DB_CACHE_SIZE大小</p>
+<p><code>shared_pool_size + db_cache_size = SGA_max_size * 70%</code></p>
+</li>
+<li>
+<p>修改DB_CAHCE_SIZE大小</p>
+<p><code>mysql
+  alter system set db_cache_size = ***M scope=spfile sid='***';
+  conn / as sysdba
+  shutdown immediate;
+  startup 
+  show parameter db_cache_size;</code></p>
+</li>
+<li>
+<p>Java Pool</p>
+</li>
+</ol>
+<p>只有当应用程序需要在数据库中运行JAVA存储程序时，才用到JAVA池</p>
+<ol>
+<li>日志缓冲区 Redo Log Buffer</li>
+</ol>
+<p>小型的，用于短期存储将写入到磁盘的重做日志的<strong>变更向量</strong>的临时区域，主要提供更快的日志处理效率。</p>
+<ol>
+<li>shared pool</li>
+</ol>
+<p>足够大，以缓存所有的频繁执行的代码和频繁访问的对象定义。</p>
+<p>过小，由于该内存空间是用来分析SQL语句（语义分析），过小导致服务器会话会抢夺其中的空间来语句。这些语句又可能被其他语句重写。如重新执行时，将不得不重新分析语句。</p>
+<p>过大，会将仅执行一次的语句也缓存了，增大了搜索的缓存量，增长了搜索时间。</p>
+<p>其内的三个数据结构：</p>
+<ul>
+<li>库缓存 （library cache） ：存储最近执行的代码</li>
+<li>数据字典缓存（data diction cache）：存储最近使用的对象定义</li>
+<li>PL/SQL缓冲区 ： 存储PL/SQL的过程，函数，的过程</li>
+</ul>
+<p>调整共享池大小</p>
+<p><code>select component,current_size,min_size,max_size  fromv$sga_dynamic_components;</code> –显示可能动态大小的SGA组件的当前最大和最小的容量</p>
+<p><code>alter system set shared_pool_size=101M;</code></p>
+<ol>
+<li>Large Pool</li>
+</ol>
+<p>供共享的服务器进程使用。</p>
+<h3 id="_2">进程架构</h3>
+<ol>
+<li>
+<p>用户连接进程</p>
+</li>
+<li>
+<p>后台进程</p>
+</li>
+<li>
+<p>用户连接进程</p>
+</li>
+</ol>
+<p><strong>用户连接进程=用户进程＋服务进程 + PGA</strong></p>
+<p><img alt="img" src="../OracleArchitecture.assets/3dc88e26efe408cf0bff108727553448.jpg" /></p>
+<ul>
+<li>
+<p>User Process 当用户请求连接Oracle服务器时，在客户端创建该进程</p>
+<p>作用1. 为DB User与Server Process建立连接</p>
+<p>作用2. 不与Oracle Server直接交互。</p>
+<p><img alt="img" src="../OracleArchitecture.assets/3ce3ead02dc392d5a4fa21c04b287f96.jpg" /></p>
+</li>
+<li>
+<p>Server Process 用户建立会话时启动，连接实例</p>
+<p>作用：</p>
+<ol>
+<li>处理Database User与Oralce Server之间的连接</li>
+<li>与Oracle Server直接交互</li>
+<li>复制执行和返回结果</li>
+</ol>
+<p>运作原理：当User与UserPorcess建立了一个Connect之后，OracleServer会创建一个ServerProcess，然后由UserProcess与ServerProcess建立连接，ServerProcess会通过User提交的请求信息来确定与Oracle Instance建立一个会话。</p>
+<p>Session会话：User通过UserProcess（准确来说是ServerProcess）与OralceInstance建立的连接，称之为会话，一个User可以N个会话，User可以多次连接到同修实例，多个Session可以使用同一个Connect.</p>
+<p><img alt="img" src="../OracleArchitecture.assets/2c6ac5e2e38b050942b1cb8ed1c1df4f.jpg" /></p>
+</li>
+<li>
+<p>Background Process 随实例启动而启动。</p>
+</li>
+</ul>
+<p>PGA (程序全局区)</p>
+<p><img alt="img" src="../OracleArchitecture.assets/22b9acbd028413bd179acdad3a087fbe.jpg" /></p>
+<p>PGA: Oracle Server Process 分配出来的内存区，专用用于当前的User Session的私有区域。用户不同PGA不同。</p>
+<p>PGA含有OracleServer Process数据和控制信息的内存区域，由3部分组成：</p>
+<ol>
+<li>栈空间：存储Session的变量，数组等的内存空间</li>
+<li>Session Info：如运行的不是多线程服务器，会话信息保存在PGA中，如果是多线程服务器则保存在SGA中。</li>
+<li>私有SQL区：保存绑定变更（binding variables）和运行时缓冲区（runtime buffers）等信息</li>
+</ol>
+<p><strong>Oracle的connect连接和session会话与User Process紧密相关。</strong></p>
+<blockquote>
+<p>db_name和Instance_name共同确定一个DB，Instance_name用作Oralce与OS的联系。也是与Oracle Server与外部连接使用。
+User提交连接时，UserProcess 先与ServerProcess连接，ServerProcess依照请求中的db_name与instance_name来确定连接的数据库（生产会有多个数据库）
+确保了一机多库，还能彼此保持独立性，同一个Database可被多个库内的用户发起Instance连接。因为每个不同的数据库的都可有同名的sys，system等用户。</p>
+</blockquote>
+<ol>
+<li>后台进程</li>
+</ol>
+<p>主要是完成数据库管理任务，它是Instance与Oracle Database的纽带，分为：</p>
+<ol>
+<li>
+<h4 id="_3">核心进程（必须存在，一死全挂，同生共死）</h4>
+</li>
+</ol>
+<p>常用的核心进程如下：6个</p>
+<p><img alt="img" src="../OracleArchitecture.assets/a8a0f53d2ceb32b8324b3acdb15cb08d.jpg" /></p>
+<pre><code class="mysql">SYS@RACDB_1  select name ,description from v$bgprocess where paddr &lt;&gt; '00';
+
+NAME  DESCRIPTION
+----- ----------------------------------------------------------------
+PMON  process cleanup
+VKTM  Virtual Keeper of TiMe process
+GEN0  generic0
+DIAG  diagnosibility process
+DBRM  DataBase Resource Manager
+RSMN  Remote Slave Monitor
+PING  interconnect latency measurement
+PSP0  process spawner 0
+ACMS  Atomic Controlfile to Memory Server
+DIA0  diagnosibility process 0
+LMON  global enqueue service monitor
+
+NAME  DESCRIPTION
+----- ----------------------------------------------------------------
+LMD0  global enqueue service daemon 0
+LMS0  global cache service process 0
+RMS0  rac management server
+LMHB  lm heartbeat monitor
+MMAN  Memory Manager
+DBW0  db writer process 0
+LGWR  Redo etc.
+LCK0  Lock Process 0
+CKPT  checkpoint
+SMON  System Monitor Process
+RECO  distributed recovery
+
+NAME  DESCRIPTION
+----- ----------------------------------------------------------------
+GTX0  Global Txn process 0
+CJQ0  Job Queue Coordinator
+RCBG  Result Cache: Background
+QMNC  AQ Coordinator
+RBAL  ASM Rebalance master
+ASMB  ASM Background
+MARK  mark AU for resync koordinator
+MMON  Manageability Monitor Process
+MMNL  Manageability Monitor Process 2
+
+31 rows selected.
+</code></pre>
+
+<h4 id="11-dbwn">1.1. 数据库写入进程（DBWn）</h4>
+<p>ServerProcess连接Oracle后，通过数据库写入进程（DBWn）将数据缓冲区中的“脏”缓冲区的数据（脏数据）写入到存储结构（数据文件，磁盘文件）</p>
+<p>将数据写到磁盘，也就是数据主加变化写入到数据文件。只做这一件事。</p>
+<p>最多20个进程，CPU个数&gt;=进程数=20，DBW[0-9]~DBW[a-j] </p>
+<h4 id="12-ckpt">1.2. 检查点 （CKPT）</h4>
+<p><img alt="img" src="../OracleArchitecture.assets/09dedfdac236d3ada435b48f1ce266c4.jpg" /></p>
+<p>CheckPoint（CKPT）</p>
+<ul>
+<li>主要用途更新数据文件头，更新Controlfile和触发DBWn数据库写进程</li>
+<li>CHPT降低数据库性能，但提高了恢复能力。可理解为：阶段性保存数据，一定条件满足就触发，执行DBWn存盘操作。</li>
+</ul>
+<h4 id="13-pmon">1.3. 进程监视进程（PMON）</h4>
+<p><img alt="img" src="../OracleArchitecture.assets/bc5eaa7819a5b255657db834462cc984.jpg" /></p>
+<p>Process Monitor：</p>
+<p>在后台进程执行失败后，由PMON负责清理数据库缓存和闲置资源，Oracle的维护机制。</p>
+<ul>
+<li>清除死进程</li>
+<li>重新启动部分进程（调度进程等）</li>
+<li>监听自动注册</li>
+<li>回滚事务</li>
+<li>释放锁</li>
+<li>释放其他资源</li>
+</ul>
+<h4 id="14-smon">1.4. 系统监视进程（SMON）</h4>
+<p><img alt="img" src="../OracleArchitecture.assets/4d9b474207e3e64dff7917151b776231.jpg" /></p>
+<ul>
+<li>SMON在启动数据库时，会自动在实例崩溃时进行自动修复。</li>
+<li>清除作废的排序临时段，回收整理碎片，合并空闲空间，释放临时段，维护闪回的时间点。</li>
+<li>在老版本中，大量删除表时，SMON会一直很忙，直到所有碎片空间都整理完。</li>
+</ul>
+<h4 id="15-redo-log-files-lgwr">1.5. 重做日志文件与日志写入进程（Redo Log Files &amp;LGWR）</h4>
+<p><img alt="img" src="../OracleArchitecture.assets/2dd6f8807b15e8d433b10251dd0b1960.jpg" /></p>
+<p>主要用于记录数据库的改变与记录数据库被改变之前有原始状态，所以应当对其作多备份，用于恢复和排错。</p>
+<ul>
+<li>激活LGWR条件：</li>
+<li>提交（COMMIT）</li>
+<li>日志缓冲区超过1/3</li>
+<li>per 3 seconds </li>
+<li>
+<p>每次DBWn执行之前  </p>
+</li>
+<li>
+<p>非核心进程（完成数据库的额外工作，少了数据库也可正常工作）
+   #### 2.1 归档进程（ARCn）</p>
+</li>
+</ul>
+<p><img alt="img" src="../OracleArchitecture.assets/be8c6bd4cbba9d75a1c0de261752e3e4.jpg" /></p>
+<h3 id="_4">存储架构</h3>
+<p>Oracle RDBMS存储结构主要由Database组成。Database又可以分为物理结构与逻辑结构理解。</p>
+<p><img alt="img" src="../OracleArchitecture.assets/c8bddb635e42d7e7229100ff0c8a8720.jpg" /></p>
+<h4 id="_5">物理结构</h4>
+<p>OS的文件集合，OS的物理文件：</p>
+<h5 id="1_1">1. 数据文件</h5>
+<ol>
+<li>数据的仓库</li>
+<li>所有的数据库数据</li>
+<li>只属于一个库</li>
+<li>来自被称为“表空间”的数据库存储逻辑单元</li>
+<li>可以直读进内存 ，执行SQL时，将相关数据文件缓存区副本执行。</li>
+<li>备份策略可以保护数据文件。</li>
+</ol>
+<h5 id="2">2. 控制文件</h5>
+<ul>
+<li>
+<p>包含维护和验证数据库完事性的必要信息。</p>
+</li>
+<li>
+<p>记录联机重做日志文件，数据文件的位置，更新的归档日志的位置</p>
+</li>
+<li>存储着维护数据库完事性所需要的信息，数据库名</li>
+<li>二型制存储，不能编辑内容。</li>
+</ul>
+<h5 id="3">3. 重做日志文件</h5>
+<ol>
+<li>对数据库所做的更改记录保存以便恢复。</li>
+<li>原理：</li>
+<li>按时间顺序，将数据库的一连串变更向量（做了什么操作）存储起来（将变更的地方标记起来）</li>
+<li>内容包括所有已经变更完成操作的信息和完成操作之前的数据库状态</li>
+<li>如果数据文件损坏，可以将这个<strong>变更向量</strong>应用于数据文件备份进行重做（重建）工作。将它恢复到发生故障的那一刻前的状态。</li>
+<li>日志文件类型：<ol>
+<li>联机重做日志文件：记录连续的数据库操作。</li>
+<li>归档日志文件（Archive Log Files）：用于时间点恢复，当Redo Log Files存满时，对日志进行归档备份，以便还有数据时使用。</li>
+</ol>
+</li>
+<li><code>SELECT NAME FROM V$LOGFILE</code> V$LOGFILE y记录了redolog文件列表。</li>
+</ol>
+<h5 id="4_1">4. 归档日志文件</h5>
+<h5 id="5">5. 参数文件</h5>
+<p>SGA结构会根据些参数因为有人设置内存和拉起后台程序。</p>
+<h5 id="6">6. 口令文件</h5>
+<p>当用户以User/Pwd建立会话时，Oracle根据存储数据字典的用户定义对用户名与密码进行验证。</p>
+<h4 id="_6">逻辑结构</h4>
+<p>表空间，典型的逻辑结构类型。包含若干个数据文件。</p>
+<ul>
+<li>表空间，存储数据库的对象，数据库开辟出来的一个逻辑空间。</li>
+<li>信息存储的最大逻辑单元</li>
+<li>存放数据库文件的地方，数据又被存储在表空间的数据文件中。</li>
+<li>一个库可由多个表空间组成。</li>
+<li>Oracle调优就是通过表空间来实现（oracle数据库独特的高级应用）</li>
+</ul>
+<h4 id="_7">逻辑空间到物理空间的映射</h4>
+<ul>
+<li>段，区，块</li>
+</ul>
+<p><img alt="img" src="../OracleArchitecture.assets/4c9f12bfabc0ef1fa81659a2b81912fd.jpg" /></p>
+<p>执行SQL的流程：</p>
+<p><img alt="img" src="../OracleArchitecture.assets/86ae498f34a9a62a55909e6ef56a6074.jpg" /></p>
+<ol>
+<li>将SQL加载入数据库缓冲区</li>
+<li>将相关的数据文件高价收购加载入数据库缓冲区。</li>
+<li>执行SQL,修改数据文件副本，形成“脏缓冲区”。</li>
+<li>CKPT检测到“脏缓冲区”，调用DBWn。</li>
+<li>在DBWn运行之前，先运行LGWR，将数据文件的原始状态和改变记录到Redo Log Files。</li>
+<li>运行DBWn，将“脏缓冲区“的内容写入到数据文件。</li>
+<li>CKPT修改控制文件和数据文件头部信息。</li>
+<li>SMON回收不必要的空间资源。</li>
+</ol>
+<h2 id="_8">最后</h2>
+<p>举例RDBMS运行流程：</p>
+<p><img alt="img" src="../OracleArchitecture.assets/36280a4bf9f226136e8b2f59e4409232.jpg" /></p>
+<ol>
+<li>User access Oracle Server之前提交请求（db_name,Instance_name,username,password等信息），Oracle Server接收到请求并通过Password File验证后，分配SGA内存池，启动后台进程时，创建并启动实例。</li>
+<li>在启动实例之后User Process与Server Process建立Connect。</li>
+<li>再通过Server Process与Oracle Instance完成建立Session。</li>
+<li>用户执行SQL时，由Server Process接到并直接到Oracle交互。</li>
+<li>SQL语句通过Server Process到达Oracle Instance，再将SQL载入数据库缓冲区</li>
+<li>Server Process通过Oracle Database与SQL语句相关的数据块副本加载到缓冲区中。</li>
+<li>数据库缓存区执行SQL语句，并产生“脏缓冲区”。</li>
+<li>CKPT检查到“脏缓冲区”，并调用DBWn，DBWn运行之前，由LGWR将数据文件的原始状态，改变等信息记录到Redo Log Files。</li>
+<li>DBWn将更新的内容写入到磁盘中数据文件。</li>
+<li>返回结果给用户。</li>
+</ol>
+<p>[toc]</p>
+<pre><code>
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.8e03edeb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
