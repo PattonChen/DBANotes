@@ -298,7 +298,7 @@
 <h3 id="dbwr-database-writer"><strong>DBWR Database Writer</strong></h3>
 </li>
 <li>
-<p>将数据库的缓存区高速缓存的更改的数据写入到数据文件</p>
+<p>将数据库的缓冲区高速缓存(database buffer cache)的更改的数据写入到数据文件</p>
 </li>
 <li>
 <h3 id="lgwr-log-writer"><strong>LGWR</strong> Log writer</h3>
@@ -310,7 +310,7 @@
 <h3 id="smon-system-monitor"><strong>SMON</strong> System Monitor</h3>
 </li>
 <li>
-<p>检查数据库的一致性，必要时在数据<strong>Open</strong>j时修复数据数据库</p>
+<p>检查数据库的一致性，必要时在库<strong>Open</strong>时修复数据数据库</p>
 </li>
 <li>
 <h3 id="pmon-process-monitor"><strong>PMON</strong> Process Monitor</h3>
@@ -322,9 +322,9 @@
 <h3 id="ckpt-checkpoint-process"><strong>CKPT</strong> Checkpoint process</h3>
 </li>
 <li>
-<p>负责在每当缓冲区高速缓存中的更改永久地记录到数据库中时，更新<strong>control file</strong>与<strong>data file</strong>的数据库状态信息。</p>
+<p>负责在每当缓冲区高速缓存（Database buffer Cache）中的更改永久地记录到数据库中时，更新<strong>control files</strong>与<strong>data files</strong>的数据库状态信息。</p>
 </li>
-<li>在检查点进程负责在检查点向<strong>DBWn</strong>发出信号， 更新<strong>control file</strong>与<strong>data file</strong>,重新指示出最新的检查点。</li>
+<li>在检查点进程负责在检查点向<strong>DBWn</strong>发出信号， 更新<strong>control files</strong>与<strong>data files</strong>,重新指示出最新的检查点。</li>
 <li>默认情况下，init.ora中CHECKPOINT_PROCESS=FALSE,意为不启用CKPT进程的，那这任务是由LGWR完成。</li>
 <li>
 <p>由于LGWR在数据库有许多数据文件时，性能会明显降低，需要启用CKPT，CKPT不写块到磁盘，而由DBWR负责完成。</p>
@@ -339,7 +339,7 @@
 <p>服务进程</p>
 </li>
 <li>
-<p>用户进程服务</p>
+<p>与用户进程服务</p>
 </li>
 <li>
 <p>用户进程</p>
@@ -355,13 +355,14 @@
 <li>当系统需要更新的时候自动更新，是系统中维护数据的一致性和顺序恢复的重要标志。</li>
 </ul>
 <h1 id="oracle_1">Oracle架构实现原理</h1>
+<p><img alt="img" src="../OracleArchitecture.assets/d73a6909a8490b6b72883773f4d319b0.jpg" /></p>
 <p>一般所说的Oracle是指Oracle的RDBMS(Relational databases Management system )，一套Oracle数据库管理系统。也称Oracle Server</p>
 <p>Oracle Server = Instance + Database （两者各独立）</p>
 <p>Instance = memory pool + backgroup process</p>
 <p>Database = Data Files + Control file + Redo log files</p>
 <p>所以 Oracle Server = 内存池+ 后台进程 + 数据文件 + 控制 + 日志文件</p>
 <p>Oracle Server 与 Database 是1：N，每个Database各自独立，各自挺有属于自己的全套相关文件。</p>
-<p>Database由一些物理文件组成，三给表存储在Database中，但不能直接读取，需要通过OracleInstance才能访问Database，<strong>Instance连接Database只能1：1，Database可以被N个Instance连接。</strong></p>
+<p>Database由一些物理文件组成，二维表存储在Database中，但不能直接读取，需要通过OracleInstance才能访问Database，<strong>Instance连接Database只能1：1，Database可以被N个Instance连接。</strong></p>
 <h2 id="oracle-oracle">Oracle架构抽象： Oracle体系=内存架构 + 进程架构 + 存储架构</h2>
 <p><img alt="image-20200504153132694" src="../OracleArchitecture.assets/image-20200504153132694.png" /></p>
 <h3 id="_1">内存架构</h3>
@@ -442,13 +443,13 @@ Redo Buffers           14753792 bytes
 <ul>
 <li>执行SQL不直接对磁盘的数据文件更改操作。</li>
 <li>复制数据文件到高速缓存缓冲区（相当于该SQL相关的数据文件副本），再去更改高速缓存缓冲区的数据块，这些数据块副本会保留一段时间，直到其占用的缓冲区被另一个数据库覆盖为止（缓冲区Size有限）</li>
-<li>查数时，为拉高执行效率，查数据也要经过缓存。Session建立时，会计算出那些数据块包含关键的<strong>行</strong>，将它们复制到缓冲区来缓存。此后，相关的关键行会传输到Session的PGA进行进一步处理。这些数据也会在数据库缓存区缓存一段时间。<strong>频繁访问的数据缓存于数据库缓冲区缓存中，目的是减少磁盘I/O的需要</strong></li>
-<li>当缓冲区的数据块与磁盘的数据块不一致时，此时这些称为“脏缓冲区”，这些数据块副本一定要写入到磁盘数据文件中。</li>
+<li>查数时，为提高执行效率，查数据也要经过缓存。Session建立时，会计算出那些数据块包含关键的<strong>行</strong>，将它们复制到缓冲区来缓存。此后，相关的关键行会传输到Session的PGA进行进一步处理。这些数据也会在数据库缓存区缓存一段时间。<strong>频繁访问的数据缓存于数据库缓冲区缓存中，目的是减少磁盘I/O的需要</strong></li>
+<li>当缓冲区的数据块与磁盘的数据块不一致时，称为“脏缓冲区”，这些数据块副本一定要写入到磁盘数据文件中。</li>
 </ul>
 <p>数据库缓冲区缓存的大小依据：</p>
 <ol>
-<li>缓存就足够大。以便缓存所有被频繁访问的数据块。过大，磁盘I/O次数会过多。</li>
-<li>不能太大。防止一些极少访问的数据块也一并复制到缓存中，增加缓存区的搜索时间。、</li>
+<li>缓存就足够大。以便缓存所有被频繁访问的数据块。过小，磁盘I/O次数会过多。</li>
+<li>不能太大。防止一些极少访问的数据块也一并复制到缓存中，增加缓冲区的搜索时间。、</li>
 </ol>
 <p>调整DB_CACHE_SIZE大小：</p>
 <ol>
