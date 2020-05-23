@@ -1,314 +1,467 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
-  <title>1. Introduction to Oracle Database - MySkys</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>1. Introduction to Oracle Database - MySkill</title>
+        <link href="../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <link rel="stylesheet" href="../../../../../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "1. Introduction to Oracle Database";
-    var mkdocs_page_input_path = "Database/Oracle/basicKnowledge/Database Concepts/Part 1 Oracle Relational Data Structures/1. Introduction to Oracle Database.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../../../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body>
 
-  <div class="wy-grid-for-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../../../../../.." class="icon icon-home"> MySkys</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../../..">MySkill</a>
+                </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../../../../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Database</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <span class="caption-text">Mysql</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Alter Database.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Alter View.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Create Table 2.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/CreateDatabase.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/CreateIndex.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/CreateTable.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/CreateView.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Delete.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Funtion.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Instert&Update.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/MySQL指定账号加密方式的方法.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Select/">Select</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/basic/Untitled.md">None</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/Mysql/">Mysql</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../../../../Mysql/Mysql_OCP/">Mysql OCP</a>
-                </li>
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../GaussDB/GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../../../../../GaussDB/HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li >
+    <a href="../../../../../GaussDB/HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训/">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../../../../../GaussDB/模拟试卷/">模拟试卷</a>
+</li>
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../../Oracle/">Oracle</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../../../PostgeSql/PostgeSql.md">PostgeSql</a>
-                </li>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Life</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../../../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../../../../Life/GeneralEducation/Wine/酒/">酒</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
-                </li>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../../../../Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../../../../../about/">About</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../../../../Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../../../../Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../../../../Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../Linux/BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../../about/">About</a>
+                            </li>
+                        </ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../../../..">MySkys</a>
-      </nav>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_part_1_oracle_relational_data_structures">_Part_1_Oracle_Relational_Data_Structures</a></li>
+        <li class="main "><a href="#_1_introduction_to_oracle_database">_1._Introduction_to_Oracle_Database</a></li>
+            <li><a href="#_about_relational_database">_About_Relational_Database</a></li>
+            <li><a href="#database_management_systemdbms">Database_Management_System(DBMS)</a></li>
+            <li><a href="#_relational_model">_Relational_Model</a></li>
+            <li><a href="#_relational_database_management_systemrdbms">_Relational_Database_Management_System(RDBMS)</a></li>
+            <li><a href="#_schema_objects">_Schema_Objects</a></li>
+            <li><a href="#_data_access">_Data_Access</a></li>
+            <li><a href="#_transaction_managment">_Transaction_Managment</a></li>
+            <li><a href="#_oracle_database_architecture">_Oracle_Database_Architecture</a></li>
+            <li><a href="#_oracle_database_document_roadmap_____">_Oracle_Database_Document_Roadmap_____</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../../../../../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>1. Introduction to Oracle Database</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <div class="toc">
+<div class="toc">
 <ul>
-<li><a href="#part-1-oracle-relational-data-structures">Part 1 Oracle Relational Data Structures</a></li>
-<li><a href="#1-introduction-to-oracle-database">1. Introduction to Oracle Database</a><ul>
-<li><a href="#about-relational-database">About Relational Database</a></li>
-<li><a href="#database-management-system-dbms">Database Management System (DBMS)</a></li>
-<li><a href="#relational-model">Relational Model</a></li>
-<li><a href="#relational-database-management-systemrdbms">Relational Database Management System(RDBMS)</a></li>
-<li><a href="#schema-objects">Schema Objects</a></li>
-<li><a href="#data-access">Data Access</a></li>
-<li><a href="#transaction-managment">Transaction Managment</a></li>
-<li><a href="#oracle-database-architecture">Oracle Database Architecture</a></li>
-<li><a href="#oracle-database-document-roadmap">Oracle Database Document Roadmap</a></li>
+<li><a href="#_part_1_oracle_relational_data_structures">_Part_1_Oracle_Relational_Data_Structures</a></li>
+<li><a href="#_1_introduction_to_oracle_database">_1._Introduction_to_Oracle_Database</a><ul>
+<li><a href="#_about_relational_database">_About_Relational_Database</a></li>
+<li><a href="#database_management_systemdbms">Database_Management_System(DBMS)</a></li>
+<li><a href="#_relational_model">_Relational_Model</a></li>
+<li><a href="#_relational_database_management_systemrdbms">_Relational_Database_Management_System(RDBMS)</a></li>
+<li><a href="#_schema_objects">_Schema_Objects</a></li>
+<li><a href="#_data_access">_Data_Access</a></li>
+<li><a href="#_transaction_managment">_Transaction_Managment</a></li>
+<li><a href="#_oracle_database_architecture">_Oracle_Database_Architecture</a></li>
+<li><a href="#_oracle_database_document_roadmap_____">_Oracle_Database_Document_Roadmap_____</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<h1 id="part-1-oracle-relational-data-structures">Part 1 Oracle Relational Data Structures</h1>
-<h1 id="1-introduction-to-oracle-database">1. Introduction to Oracle Database</h1>
-<p>This chapter provides an overview of Oracle Database.</p>
-<p>This chapter contains the following topics:</p>
-<ul>
-<li>About Relational Database</li>
-<li>Schema Objects</li>
-<li>Data Access</li>
-<li>Transaction Managment</li>
-<li>Oracle Database Architecture</li>
-<li>Oracle Database Document Roadmap </li>
-</ul>
-<h2 id="about-relational-database">About Relational Database</h2>
-<p>Every organization has information that it must store and manage to meet its requirements. For example,a corporation must be available to those who need it .</p>
-<p>An information system is a formal system for storing and processing information.An information system could be a set of cardboard boxes containing manilafolders along with rules for how to store and retrieve the folders. Howver,most companies today use a database to automate their information systems. Adatabase is an organized collection of information treated as a unit. The purpose of a database is to collect,store,and retrieve related information for use by database applications.</p>
-<h2 id="database-management-system-dbms">Database Management System (DBMS)</h2>
-<p>A <strong>database management system(DBMS)</strong> is software that controls the storage,organization,and retrieval of data.</p>
-<p>Typically,a DBMS has the following elements:</p>
-<ul>
-<li>Kernel code </li>
-</ul>
-<p>This code manages memory and storage for the DBMS.</p>
-<ul>
-<li>Repository of metadata</li>
-</ul>
-<p>This repository is usually called a data dictionary.</p>
-<ul>
-<li>Query language</li>
-</ul>
-<p>This language enables applications to access the data.</p>
-<p>A database application is a software program that interacts whith a database to access and manipulate data.</p>
-<p>The first generation of database management systems included the following types:</p>
-<ul>
-<li>Hierarchical</li>
-</ul>
-<p>A hierachical database organizes data in a tree structure. Each parent record has on or more child resords,similar to the structure of a file system.</p>
-<ul>
-<li>Network</li>
-</ul>
-<p>A network database is similar to hierrarchical database, except resords have a many-to-many rather than a one-to-many relationship.</p>
-<p>The preceding database management systems stored data in  rigid, predetermined relationships. Because no data definition language existed, changing the structure of the data was difficult,Also,these systems lacked a simple query langauge, whichc hindered application development.</p>
-<h2 id="relational-model">Relational Model</h2>
-<p>In his seminal 1970 paper “A Relational Model of Data for Large Shared Data Banks,”E.F.Codd defined a relational model based on mathematical set theory.Today, the most widely accepted database mode is the relational model.</p>
-<p>A relational database is a database that conforms to the relational model.The relational model has the following major aspects:</p>
-<ul>
-<li>Structures</li>
-</ul>
-<p>Well-defined objects store or access the data of a database.</p>
-<ul>
-<li>Operations</li>
-</ul>
-<p>Clearly defined actions enable applications to manipulate the data and structures of database.</p>
-<ul>
-<li>Integrity rules</li>
-</ul>
-<p>Integrity rules govern operations on the data and structures of a database.</p>
-<p>A relational database stores data in a set of simple relations.A relation is a set of tuples.A tuple is an unordered set of attribute values.</p>
-<p>A table is a two-dimensional representation of a relation in the form of rows(tuples) and columns(attributes). Each row in a table has the same set of columns. A relational databas is a database that stores data in relations(tables). For example, a relationsal database colud store information about company employees in an employee table, a department table, and a salary table.</p>
-<h2 id="relational-database-management-systemrdbms">Relational Database Management System(RDBMS)</h2>
-<p>The relational model is the basis for a <strong>relational database management system(RDBMS)</strong>. An RDBMS moves data into a database,stores the data, and retrieves it so that applications can manipulate it .</p>
-<h2 id="schema-objects">Schema Objects</h2>
-<h2 id="data-access">Data Access</h2>
-<h2 id="transaction-managment">Transaction Managment</h2>
-<h2 id="oracle-database-architecture">Oracle Database Architecture</h2>
-<h2 id="oracle-database-document-roadmap">Oracle Database Document Roadmap</h2>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+<h1 id="_part_1_oracle_relational_data_structures">_Part_1_Oracle_Relational_Data_Structures</h1>
+<h1 id="_1_introduction_to_oracle_database">_1._Introduction_to_Oracle_Database</h1>
+<p>This_chapter_provides_an_overview_of_Oracle_Database.</p>
+<p>This_chapter_contains_the_following_topics:</p>
+<p>-<em>About_Relational_Database
+-_Schema_Objects
+-_Data_Access
+-_Transaction_Managment
+-_Oracle_Database_Architecture
+-_Oracle_Database_Document_Roadmap</em></p>
+<h2 id="_about_relational_database">_About_Relational_Database</h2>
+<p>Every_organization_has_information_that_it_must_store_and_manage_to_meet_its_requirements.<em>For_example,a_corporation_must_be_available_to_those_who_need_it</em>.</p>
+<p>An_information_system_is_a_formal_system_for_storing_and_processing_information.An_information_system_could_be_a_set_of_cardboard_boxes_containing_manilafolders_along_with_rules_for_how_to_store_and_retrieve_the_folders._Howver,most_companies_today_use_a_database_to_automate_their_information_systems._Adatabase_is_an_organized_collection_of_information_treated_as_a_unit._The_purpose_of_a_database_is_to_collect,store,and_retrieve_related_information_for_use_by_database_applications.</p>
+<h2 id="database_management_systemdbms"><em>Database_Management_System</em>(DBMS)</h2>
+<p>A_<strong>database_management_system(DBMS)</strong>_is_software_that_controls_the_storage,organization,and_retrieval_of_data.</p>
+<p>Typically,a_DBMS_has_the_following_elements:</p>
+<p>-<em>Kernel_code</em></p>
+<p>___This_code_manages_memory_and_storage_for_the_DBMS.</p>
+<p>-_Repository_of_metadata</p>
+<p>___This_repository_is_usually_called_a_data_dictionary.</p>
+<p>-_Query_language</p>
+<p>___This_language_enables_applications_to_access_the_data.</p>
+<p>A_database_application_is_a_software_program_that_interacts_whith_a_database_to_access_and_manipulate_data.</p>
+<p>The_first_generation_of_database_management_systems_included_the_following_types:</p>
+<p>*_Hierarchical</p>
+<p>___A_hierachical_database_organizes_data_in_a_tree_structure._Each_parent_record_has_on_or_more_child_resords,similar_to_the_structure_of_a_file_system.</p>
+<p>*_Network</p>
+<p>___A_network_database_is_similar_to_hierrarchical_database,_except_resords_have_a_many-to-many_rather_than_a_one-to-many_relationship.</p>
+<p>The_preceding_database_management_systems_stored_data_in__rigid,_predetermined_relationships._Because_no_data_definition_language_existed,_changing_the_structure_of_the_data_was_difficult,Also,these_systems_lacked_a_simple_query_langauge,_whichc_hindered_application_development.</p>
+<h2 id="_relational_model">_Relational_Model</h2>
+<p>In_his_seminal_1970_paper_“A_Relational_Model_of_Data_for_Large_Shared_Data_Banks,”E.F.Codd_defined_a_relational_model_based_on_mathematical_set_theory.Today,_the_most_widely_accepted_database_mode_is_the_relational_model.</p>
+<p>A_relational_database_is_a_database_that_conforms_to_the_relational_model.The_relational_model_has_the_following_major_aspects:</p>
+<p>-_Structures</p>
+<p>___Well-defined_objects_store_or_access_the_data_of_a_database.</p>
+<p>-_Operations</p>
+<p>___Clearly_defined_actions_enable_applications_to_manipulate_the_data_and_structures_of_database.</p>
+<p>-_Integrity_rules</p>
+<p>___Integrity_rules_govern_operations_on_the_data_and_structures_of_a_database.</p>
+<p>A_relational_database_stores_data_in_a_set_of_simple_relations.A_relation_is_a_set_of_tuples.A_tuple_is_an_unordered_set_of_attribute_values.</p>
+<p>A_table_is_a_two-dimensional_representation_of_a_relation_in_the_form_of_rows(tuples)_and_columns(attributes)._Each_row_in_a_table_has_the_same_set_of_columns._A_relational_databas_is_a_database_that_stores_data_in_relations(tables)._For_example,_a_relationsal_database_colud_store_information_about_company_employees_in_an_employee_table,_a_department_table,_and_a_salary_table.</p>
+<h2 id="_relational_database_management_systemrdbms">_Relational_Database_Management_System(RDBMS)</h2>
+<p>The_relational_model_is_the_basis_for_a_<strong>relational_database_management_system(RDBMS)</strong>.<em>An_RDBMS_moves_data_into_a_database,stores_the_data,_and_retrieves_it_so_that_applications_can_manipulate_it</em>.</p>
+<h2 id="_schema_objects">_Schema_Objects</h2>
+<h2 id="_data_access">_Data_Access</h2>
+<h2 id="_transaction_managment">_Transaction_Managment</h2>
+<h2 id="_oracle_database_architecture">_Oracle_Database_Architecture</h2>
+<h2 id="_oracle_database_document_roadmap_____">_Oracle_Database_Document_Roadmap_____</h2></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '../../../../../..';</script>
-    <script src="../../../../../../js/theme.js" defer></script>
-      <script src="../../../../../../search/main.js" defer></script>
 
-</body>
+    </body>
 </html>

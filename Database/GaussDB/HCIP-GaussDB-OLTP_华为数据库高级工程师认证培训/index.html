@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训 - MySkill</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">MySkill</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li class="active">
+    <a href="./">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../模拟试卷/">模拟试卷</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Oracle/Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../../Oracle/Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../../Oracle/Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Oracle/Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../../Oracle/Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Oracle/Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Linux/BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../HCIP-GaussDB-OLTP_V1.0考试大纲/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../模拟试卷/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_hcip-gaussdb-oltp_">_HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a></li>
+            <li><a href="#_">_培训时长</a></li>
+            <li><a href="#__1">_课程内容</a></li>
+            <li><a href="#__2">_培训方式</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_hcip-gaussdb-oltp_">_HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</h1>
+<h4 id="_">_培训时长</h4>
+<p>-_12工作日</p>
+<h2 id="__1">_课程内容</h2>
+<p>第一章_GaussDB_OLTP体系结构（0.25天）</p>
+<p>-__产品简介
+-_数据库系统架构
+-_支持的部署形态
+-_内存架构
+-_文件架构
+-_线程架构
+-_主要特性介绍
+__1._Paxos两地三中心高可用
+__2._分布式高扩展
+__3._分布式事务强一致</p>
+<p>第二章_数据库环境搭建（0.75天）</p>
+<p>-_安装环境要求
+-_安装规划
+-_安装环境准备
+-_数据库安装
+__1._服务端安装
+__2._客户端安装</p>
+<p>-_数据库工具
+__1._工具概述
+__2._客户端工具
+__3._DS
+__4._zsql
+__5._数据库管理工具
+__6._图形化运维工具DM
+-_数据库升级
+-_创建数据库
+-_数据库迁移</p>
+<p>第三章_SQL高级特性（0.5天）</p>
+<p>-_数据类型
+-_SQL高级语法
+-_表达式
+__1._条件
+__2._运算符
+__3._通配符
+__4._常量
+__5._格式化
+-_函数
+-_PLSQL</p>
+<p>第四章_数据库管理（3.5天）</p>
+<p>-__数据库实例管理（2h）
+__1.<em>概述
+__2._数据库参数
+__3._数据库启动
+__4._数据库关闭
+__5._系统日志查看
+__6._相关视图
+-_数据库连接管理（1h
+__1._数据库监听
+__2._数据库连接机制
+__3._数据库连接方式
+__4._驱动
+__5._客户端
+__6._数据库连接池功能
+__7._会话管理
+-_数据库存储管理（0.5天）
+__1._数据库存储结构
+__2._表空间和数据文件物理结构
+__3._预置表空间
+__4._自定义表空间及管理
+__5._表空间相关视图
+-_文件管理（1h）
+__1._参数文件
+__2._控制文件
+__3._Redo日志文件
+__4._在线日志
+__5._归档日志
+-_数据库用户管理（4h）
+__1._数据库用户、角色、权限
+__2._概念介绍</em>
+__3._系统预置用户介绍
+__4._系统预置角色介绍
+__5._自定义用户
+__6._自定义角色
+__7._相关视图
+__8._权限管理
+__9._系统权限
+__10._对象权限
+__11._授权
+__12._收回
+__13._Profile
+__14._Profile定义和使用场景
+__15._系统默认Profile
+__16._自定义Profile
+-__数据库对象管理（4h）
+__1._支持的数据库对象
+__2._对象管理
+__3._Table
+__4._Index
+__5._分区
+__6._View
+__7._Sequence
+__8._存储过程
+__9._自定义函数
+__10._同义词
+__11._触发器
+__12._大对象
+__13._数据库对象相关视图
+-_数据并发管理（1天）
+__1._并发概述
+__2._什么是并发
+__3._事务
+__4._为什么要做并发管理
+__5._常见并发场景
+__6._并发机制
+__7._回滚段
+__8._MVCC机制
+__9._锁/死锁
+__10._相关视图</p>
+<p>第五章_数据库安全管理（0.5天）</p>
+<p>-_数据库安全功能总览
+-_访问控制
+__1._服务器连接配置
+__2._客户端连接方法
+__3._连接安全认证
+__4._使用SSL连接
+-_用户权限管理
+-_安全审计
+__1._审计开关
+__2._查看、删除审计日志
+__3._推荐审计日志配置</p>
+<p>第六章_数据库运维与调优（3.5天）</p>
+<p>-_系统监控（0.5天）
+__1._系统监控指标
+__2._监控告警
+__3._监控数据库状态
+__4._监控日志
+__5._监控相关视图
+-_备份恢复管理（1天）
+__1._备份恢复概述
+__2._备份
+__3._全量备份
+__4._增量备份
+__5._恢复
+__6._全量恢复
+__7._PITR
+__8._数据导入导出
+__9._exp
+__10._imp
+__11._dump
+__12._load
+__13._回收站
+__14._闪回
+-_性能调优（1.5天）
+__1._性能瓶颈分类概览
+__2._性能诊断方式概览
+__3._系统调优
+__4._内存管理方式
+__5._等待事件
+__6._WSR报告详解
+__7._SQL调优
+__8._执行计划介绍
+__9._执行计划查看与解读
+__10._RBO/CBO机制
+__11._统计信息管理
+__12._SQL性能定位
+__13._SQL调优手段
+__14._Hint介绍
+__15._性能相关视图
+-_故障处理（0.5天）
+__1._常见故障场景
+__2._故障处理流程
+__3._故障定位/信息收集
+__4._应急处理手段
+__5._常见故障案例</p>
+<p>第七章_数据库高可用特性_（0.5天）</p>
+<p>-__高可用功能介绍
+-_主备HA
+__1._主备HA搭建
+__2._HA修复
+__3._主备切换
+__4._主备状态查询
+__5._数据对比
+__6._常见故障处理
+-_逻辑复制
+__1._逻辑复制原理
+__2._应用场景
+__3._逻辑复制配置
+__4._常见故障处理</p>
+<p>第八章_数据库分布式Sharding_（1.5天）</p>
+<p>-__分布式集群安装部署（2h）
+__1._分布式架构简介
+__2._安装部署
+__3._升级
+__4._卸载
+-_日常运维（2h）
+__1._集群管理
+__2._启停集群
+__3._参数修改
+__4._日志管理
+__5._日志分类
+__6._日志管理
+__7._日常监控
+__8._告警
+__9._状态查询
+__10._日志
+__11._安全管理
+__12._分布式安全管理与单机差异
+-_集群高可用（2h）
+__1._主备
+__2._Paxos
+-_故障处理（1h）
+-_性能调优&amp;设计理念（1.5h）
+__1._分布式设计理念
+__2._集群与单机语法差异
+__3._性能调优</p>
+<p>第九章_综合实验（1天）</p>
+<p>-_安装（单机）
+-_备份恢复
+__1._创建数据库
+__2._提供备份集供学员将数据恢复至自己创建的库
+-_查询SQL调优
+-_单机扩成主备</p>
+<h2 id="__2">_培训方式</h2>
+<p>-_理论授课、上机实习</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
