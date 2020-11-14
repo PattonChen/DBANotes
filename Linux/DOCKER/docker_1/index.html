@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Docker 1 - MySkill</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">MySkill</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/GaussDB/GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训/">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/模拟试卷/">模拟试卷</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#docker">DOCKer的镜像源及如何修改</a></li>
+        <li class="main "><a href="#options">编辑OPTIONS，添加中国科技大学的镜像源</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<div class="toc">
+<ul>
+<li><a href="#docker">DOCKer的镜像源及如何修改</a></li>
+<li><a href="#options">编辑OPTIONS，添加中国科技大学的镜像源</a></li>
+</ul>
+</div>
+<h2 id="docker">DOCKer的镜像源及如何修改</h2>
+<p>方法一：</p>
+<p>vi /etc/docker/daemon.json #添加如下网易镜像源</p>
+<pre><code class="shell">{
+&quot;registry-mirrors&quot;: [&quot;http://hub-mirror.c.163.com&quot;]
+}
+</code></pre>
+
+<p>方法二：</p>
+<p>编辑/etc/sysconfig/docker，在OPTIONS变量后追加参数  --registry-mirror=镜像源地址 </p>
+<h1 id="options">编辑OPTIONS，添加中国科技大学的镜像源</h1>
+<pre><code class="shell">OPTIONS='--selinux-enabled --log-driver=journald --registry mirror=https://docker.mirrors.ustc.edu.cn'
+</code></pre>
+
+<p>方法三：</p>
+<p><code>vi /etc/container/registries.conf</code></p>
+<pre><code class="shell">[registries.search]
+registries = ['docker.mirrors.ustc.edu.cn']
+</code></pre>
+
+<pre><code class="bash">[root@mysql ~]# docker info 
+Containers: 0
+ Running: 0
+ Paused: 0
+ Stopped: 0
+Images: 0
+Server Version: 1.13.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: false
+ Native Overlay Diff: true
+Logging Driver: journald
+Cgroup Driver: systemd
+Plugins: 
+ Volume: local
+ Network: bridge host macvlan null overlay
+Swarm: inactive
+Runtimes: docker-runc runc
+Default Runtime: docker-runc
+Init Binary: /usr/libexec/docker/docker-init-current
+containerd version:  (expected: aa8187dbd3b7ad67d8e5e3a15115d3eef43a7ed1)
+runc version: 66aedde759f33c190954815fb765eedc1d782dd9 (expected: 9df8b306d01f59d3a8029be411de015b7304dd8f)
+init version: fec3683b971d9c3ef73f284f176672c44b448662 (expected: 949e6facb77383876aeff8a6944dde66b3089574)
+Security Options:
+ seccomp
+  WARNING: You're not using the default seccomp profile
+  Profile: /etc/docker/seccomp.json
+Kernel Version: 3.10.0-1062.9.1.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+Number of Docker Hooks: 3
+CPUs: 3
+Total Memory: 5.669 GiB
+Name: mysql
+ID: ZYNS:LN63:V7R3:ZJZE:ZHZS:C234:553A:STLN:IXK7:TP7E:5CGX:OIZS
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Registry: https://index.docker.io/v1/
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
+Registries: docker.io (secure)
+
+[root@mysql ~]# docker version 
+Client:
+ Version:         1.13.1
+ API version:     1.26
+ Package version: docker-1.13.1-162.git64e9980.el7.centos.x86_64
+ Go version:      go1.10.3
+ Git commit:      64e9980/1.13.1
+ Built:           Wed Jul  1 14:56:42 2020
+ OS/Arch:         linux/amd64
+
+Server:
+ Version:         1.13.1
+ API version:     1.26 (minimum version 1.12)
+ Package version: docker-1.13.1-162.git64e9980.el7.centos.x86_64
+ Go version:      go1.10.3
+ Git commit:      64e9980/1.13.1
+ Built:           Wed Jul  1 14:56:42 2020
+ OS/Arch:         linux/amd64
+ Experimental:    false
+[root@mysql ~]# ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:50:33:ad brd ff:ff:ff:ff:ff:ff
+    inet 192.168.6.22/24 brd 192.168.6.255 scope global enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe50:33ad/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s9: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:0f:53:79 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.170/24 brd 192.168.1.255 scope global dynamic enp0s9
+       valid_lft 85972sec preferred_lft 85972sec
+    inet6 2409:8a55:670:cd0:a00:27ff:fe0f:5379/64 scope global dynamic 
+       valid_lft 86363sec preferred_lft 86363sec
+    inet6 fe80::a00:27ff:fe0f:5379/64 scope link 
+       valid_lft forever preferred_lft forever
+4: docker0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN 
+    link/ether 02:42:57:38:47:c8 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 scope global docker0
+       valid_lft forever preferred_lft forever
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

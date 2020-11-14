@@ -1,0 +1,73 @@
+[TOC]
+
+# SpringBoot使命
+
+- 化繁为简（宗旨）
+
+SprintgBoot核心功能
+
+- 独立运行：java -jar xxx.jar
+- 内嵌WEB服务器
+- 简化配置
+- 准生产的应用监控
+
+SpringBoot与微服务的关系
+
+- Java的润滑剂
+
+
+
+
+
+# SpringCloud使命
+
+- 简化Java的分布式系统
+
+# SpringCloud与微服务
+
+- 一系统列框架
+- 简化java的分布式系统
+- SpringBoot封装
+
+
+
+# SpringCloud vs SpringBoot
+
+- SprintBoot意在简化，一种开发配置风格
+- SprintCloud意在简化多种的分布式开发，是功能的集合，风格的统一
+
+SpringCloud vs microservice
+
+- Java的微服务
+- 侧重功能，侧重开发
+
+## SpringCloud核心组件
+
+- Netflix Eureka 注册中心
+- Netflix Riboon 客户端侧的负载均衡
+- Netflix Hystrix
+- 
+
+
+
+
+
+![image-20200802231128740](springBoot&microservice.assets/image-20200802231128740.png)
+
+
+
+### Netflix Ribbon
+
+![image-20200802231320053](springBoot&microservice.assets/image-20200802231320053.png)
+
+### Netflix Hystrix 调度器
+
+![image-20200802232331828](springBoot&microservice.assets/image-20200802232331828.png)s
+
+### Netflix Zuul（zu）服务路由（统一接口）
+
+![image-20200802231759865](springBoot&microservice.assets/image-20200802231759865.png)
+
+## SpringCloud Config
+
+![image-20200802231854360](springBoot&microservice.assets/image-20200802231854360.png)

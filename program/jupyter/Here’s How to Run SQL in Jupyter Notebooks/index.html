@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Here’s How to Run SQL in Jupyter Notebooks - MySkill</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">MySkill</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/GaussDB/GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训/">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/模拟试卷/">模拟试卷</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Linux/BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#heres-how-to-run-sql-in-jupyter-notebooks">Here’s How to Run SQL in Jupyter Notebooks</a></li>
+            <li><a href="#jupyter-notebooks-as-a-sql-ide">Jupyter Notebooks as a SQL IDE?</a></li>
+        <li class="main "><a href="#a-bit-of-setup">A bit of Setup</a></li>
+        <li class="main "><a href="#lets-begin">Let’s Begin</a></li>
+            <li><a href="#mark-entire-cell-as-a-sql-block">Mark entire cell as a SQL block</a></li>
+            <li><a href="#single-line-statements-store-result-to-a-variable">Single Line Statements — Store result to a Variable</a></li>
+        <li class="main "><a href="#what-else-can-you-do">What else can you do?</a></li>
+            <li><a href="#converting-to-pandas-dataframe">Converting to Pandas DataFrame</a></li>
+            <li><a href="#plotting">Plotting</a></li>
+        <li class="main "><a href="#before-you-go">Before you go</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="heres-how-to-run-sql-in-jupyter-notebooks">Here’s How to Run SQL in Jupyter Notebooks</h1>
+<h2 id="jupyter-notebooks-as-a-sql-ide">Jupyter Notebooks as a SQL IDE?</h2>
+<p><a href="https://towardsdatascience.com/@radecicdario?source=post_page-----f26eb90f3259----------------------"><img alt="Dario Radečić" src="https://miro.medium.com/fit/c/96/96/2*VmdbajrpX9nwOc9UtkV3Yg.png" /></a></p>
+<p><a href="https://towardsdatascience.com/@radecicdario?source=post_page-----f26eb90f3259----------------------">Dario Radečić</a><a href="https://medium.com/m/signin?actionUrl=%2F_%2Fsubscribe%2Fuser%2F689ba04bb8be&amp;operation=register&amp;redirect=https%3A%2F%2Ftowardsdatascience.com%2Fheres-how-to-run-sql-in-jupyter-notebooks-f26eb90f3259&amp;source=-689ba04bb8be-------------------------follow_byline-">Follow</a></p>
+<p><a href="https://towardsdatascience.com/heres-how-to-run-sql-in-jupyter-notebooks-f26eb90f3259?source=post_page-----f26eb90f3259----------------------">Jan 19</a> · 5 min read </p>
+<p>Let’s face the facts — databases are everywhere. Even though, when learning data science you’ve only dealt with CSVs, that will hardly resemble reality since most companies tend to store data into databases.</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/1504/1*jdFKEeOgpTbwCKfTWlgaWA.jpeg" /></p>
+<p>In today’s article, I quickly want to go over the concept of using Jupyter Notebooks or <strong>JupyterLab</strong> as a SQL IDE. Prior to this, I’ve worked with various Python libraries to connect to the database, but this nifty little trick will save you a bunch of time and typing.</p>
+<p>After reading the article you will be able to execute any SQL query/procedure directly through the Notebook, and also to store the result of any query to a variable you can then use later in your analysis.</p>
+<p>I don’t want to dwell any more with the intro, let’s jump straight into the good stuff.</p>
+<hr />
+<h1 id="a-bit-of-setup">A bit of Setup</h1>
+<p>To begin, you’ll need to install one library to make sure you can run SQL directly in the Notebooks, so paste the following into any Jupyter cell:</p>
+<pre><code>!pip install ipython-sql
+</code></pre>
+
+<p>When writing the article I was dealing with the <strong>Oracle database</strong>. If you are also, make sure <code>cx_Oracle</code> is installed. If not just quickly look online for a required library. In my opinion, those would be:</p>
+<ul>
+<li><code>pyodbc</code> — for SQL Server</li>
+<li><code>mysql</code> — for MySQL</li>
+<li><code>psycopg2</code> — for PostgreSQL</li>
+</ul>
+<p>Now we will use the <code>sqlalchemy</code> library to create an engine needed to connect to the database. This will be required only once per connection string — meaning you won’t have to do it each time when making a connection.</p>
+<p>Here are some general-looking connection strings for various databases:</p>
+<ul>
+<li><strong>PostgreSQL</strong>: <code>postgresql://scott:tiger@localhost/mydatabase</code></li>
+<li><strong>MySQL</strong>: <code>mysql://scott:tiger@localhost/foo</code></li>
+<li><strong>Oracle</strong>: <code>oracle://scott:tiger@127.0.0.1:1521/sidname</code></li>
+<li><strong>SQL Server:</strong> <code>mssql+pyodbc://scott:tiger@mydsn</code></li>
+<li><strong>SQLite:</strong> <code>sqlite:///foo.db</code></li>
+</ul>
+<p>Here’ an example for Oracle DB:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*EYEBKpzKPp1DeoemoicGbw.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/573/1*EYEBKpzKPp1DeoemoicGbw.png" /></p>
+<p>Now we can load in previously installed SQL module:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*kPkaNWnh0Z9SreaxuR8kOA.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/146/1*kPkaNWnh0Z9SreaxuR8kOA.png" /></p>
+<p>And connect to the database with a connection string specified earlier. Notice how the column content is prefixed with the <strong>percent sign</strong>:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*N6yj1QlU4LTAOyJNjY5nzQ.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/370/1*N6yj1QlU4LTAOyJNjY5nzQ.png" /></p>
+<p>If you’ve got the same output as I did it means that everything went well and you are good to proceed!</p>
+<hr />
+<h1 id="lets-begin">Let’s Begin</h1>
+<p>Okay, now you’re ready to go. To start out I’ll show how to pass a multi-line SQL query to a Juypter cell. Without this magic commands, you would have to import various libraries, make a connection to the database, surround the query with brackets and then execute it, but now it’s just a matter of prefixing the code with <code>%%sql</code> or <code>%sql</code> which I will demonstrate below.</p>
+<h2 id="mark-entire-cell-as-a-sql-block">Mark entire cell as a SQL block</h2>
+<p>Let’s start with this one, as it will allow you to enter multi-line SQL statements. The only requirement is to make a <code>%%sql</code> prefix on the start. I’ve decided to select the first five rows from some table:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*ysbNzrXdC7dsyNNxMIPDAw.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/264/1*ysbNzrXdC7dsyNNxMIPDAw.png" /></p>
+<p>And yeah, that’s it! If you were to execute this cell this is the output you’d get:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*S1EDY-RcywEcZAy_eOFjMA.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/1144/1*S1EDY-RcywEcZAy_eOFjMA.png" /></p>
+<p>It kind of looks like a <strong>Pandas</strong> DataFrame, but it isn’t, it only showcases how the table looks.</p>
+<h2 id="single-line-statements-store-result-to-a-variable">Single Line Statements — Store result to a Variable</h2>
+<p>You are not limited to multi-line statements, and you can store the result of a SQL query to a variable. Here you will have only one percent sign instead of two: <code>%sql</code></p>
+<p>Let’s see this in action — I’m going to select a single value from a <code>phone_number</code> column:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*tSDhOvfsQoPMe_s1lWxdJg.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/670/1*tSDhOvfsQoPMe_s1lWxdJg.png" /></p>
+<p>You can see that if I print it, the output isn’t something you’d expect, and here’s how to address that issue:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*qymNpmY1CWjnst4YhI5Gpw.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/159/1*qymNpmY1CWjnst4YhI5Gpw.png" /></p>
+<p>It was just a matter of simple indexing, nothing to be worried about.</p>
+<hr />
+<h1 id="what-else-can-you-do">What else can you do?</h1>
+<p>It’s been all fun and games until now, but you might be wondering what else <code>ipython-sql</code> can provide to us. Well, a lot, and I’m gonna cover two things. This won't blow your mind but are a good thing to know. Let’s start.</p>
+<h2 id="converting-to-pandas-dataframe">Converting to Pandas DataFrame</h2>
+<p>It’s just one nice additional feature of <code>ipython-sql</code> saving you a bit of time so you don’t have to make the conversion manually. I will select some set of data from the database and then call <code>.DataFrame()</code> method of it:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*pe_ub8m1KgliL7x7XQiwqg.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/515/1*pe_ub8m1KgliL7x7XQiwqg.png" /></p>
+<p>We can now check both the DataFrame and its type, just to verify everything is as expected:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*h0IKCPsnEN4_o4ORlDIpHw.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/760/1*h0IKCPsnEN4_o4ORlDIpHw.png" /></p>
+<p>Yeah, the data look right, the type is okay, so we can proceed.</p>
+<h2 id="plotting">Plotting</h2>
+<p>Let’s say you’re in a hurry and want to quickly fetch some data from a database and make a bar chart. To demonstrate, I’ll import <code>matplotlib</code> and make everything a bit bigger just for the sake of it, and then store a result of some SQL query to a variable.</p>
+<p>Once done, you can call <code>.bar()</code> method to make a bar chart:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*W5RVUrb4vOGs38p-GJINvA.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/667/1*W5RVUrb4vOGs38p-GJINvA.png" /></p>
+<p>And the corresponding plot would look like this:</p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/60/1*IqzuHwI5EyKe6jcev65w2g.png?q=20" /></p>
+<p><img alt="Image for post" src="https://miro.medium.com/max/1309/1*IqzuHwI5EyKe6jcev65w2g.png" /></p>
+<p>That’s quite nice for just a line of code, plotting-wise. Note that you could also use <code>.pie()</code> to show a pie chart — feel free to look for other options on your own.</p>
+<hr />
+<h1 id="before-you-go">Before you go</h1>
+<p>I don’t think that anything from the article had a wow-factor for you, but I also hope that you can appreciate the simplicity of performing database queries in this format.</p>
+<p>This could also be an alternative to standard SQL IDE’s if performing queries is all you do and there’s no need for anything more advanced.</p>
+<p>Anyhow, I hope you’ve managed to get something useful from the article. Thanks for reading.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

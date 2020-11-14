@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>一键解决 go get golang.org/x 包失败 - MySkill</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">MySkill</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/GaussDB/GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训/">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../../../Database/GaussDB/模拟试卷/">模拟试卷</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Database/Oracle/Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Linux/BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#go-get-golangorgx">一键解决 go get golang.org/x 包失败</a></li>
+            <li><a href="#_1">问题描述</a></li>
+            <li><a href="#_2">解决方式</a></li>
+            <li><a href="#_5">参考资料</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="go-get-golangorgx">一键解决 go get golang.org/x 包失败</h1>
+<p>2019-02-24 </p>
+<p><a href="https://shockerli.net/categories/go/"> Go </a></p>
+<p>约 1029 字 预计阅读 3 分钟</p>
+<h2 id="_1">问题描述</h2>
+<p>当我们使用 <code>go get</code>、<code>go install</code>、<code>go mod</code> 等命令时，会自动下载相应的包或依赖包。但由于众所周知的原因，类似于 <code>golang.org/x/...</code> 的包会出现下载失败的情况。如下所示：</p>
+<table>
+<thead>
+<tr>
+<th><code>1 2 3</code></th>
+<th><code>$ go get -u golang.org/x/sys go get golang.org/x/sys: unrecognized import path "golang.org/x/sys" (https fetch: Get https://golang.org/x/sys?go-get=1: dial tcp 216.239.37.1:443: i/o timeout)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">解决方式</h2>
+<p>那我们该如何解决问题呢？毕竟还要制造 bug 的嘛~</p>
+<h3 id="_3">手动下载</h3>
+<p>我们常见的 <code>golang.org/x/...</code> 包，一般在 GitHub 上都有官方的镜像仓库对应。比如 <code>golang.org/x/text</code> 对应 <code>github.com/golang/text</code>。所以，我们可以手动下载或 clone 对应的 GitHub 仓库到指定的目录下。</p>
+<table>
+<thead>
+<tr>
+<th><code>1 2 3 4</code></th>
+<th><code>mkdir $GOPATH/src/golang.org/x cd $GOPATH/src/golang.org/x git clone git@github.com:golang/text.git rm -rf text/.git</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>当如果需要指定版本的时候，该方法就无解了，因为 GitHub 上的镜像仓库多数都没有 tag。并且，手动嘛，程序员怎么能干呢，尤其是依赖的依赖，太多了。</p>
+<h3 id="_4">设置代理</h3>
+<p>如果你<strong>有代理</strong>，那么可以设置对应的环境变量：</p>
+<table>
+<thead>
+<tr>
+<th><code>1 2</code></th>
+<th><code>export http_proxy=http://proxyAddress:port export https_proxy=http://proxyAddress:port</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>或者，直接用 <code>all_proxy</code>：</p>
+<table>
+<thead>
+<tr>
+<th><code>1</code></th>
+<th><code>export all_proxy=http://proxyAddress:port</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="go-mod-replace">go mod replace</h3>
+<p>从 Go 1.11 版本开始，新增支持了 <code>go modules</code> 用于解决包依赖管理问题。该工具提供了 <code>replace</code>，就是为了解决包的别名问题，也能替我们解决 <code>golang.org/x</code> 无法下载的的问题。</p>
+<p><code>go module</code> 被集成到原生的 <code>go mod</code> 命令中，但是如果你的代码库在 <code>$GOPATH</code> 中，<code>module</code> 功能是默认不会开启的，想要开启也非常简单，通过一个环境变量即可开启 <code>export GO111MODULE=on</code>。</p>
+<p>以下为参考示例：</p>
+<table>
+<thead>
+<tr>
+<th><code>1 2 3 4 5 6 7 8 9</code></th>
+<th><code>module example.com/hello require (    golang.org/x/text v0.3.0 ) replace (    golang.org/x/text =&gt; github.com/golang/text v0.3.0 )</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>类似的还有 <a href="https://github.com/Masterminds/glide">glide</a>、<a href="https://github.com/gpmgo/gopm">gopm</a> 等这类第三方包管理工具，都不同方式的解决方案提供给我们。</p>
+<h3 id="goproxy">GOPROXY 环境变量</h3>
+<p>终于到了本文的终极大杀器 —— <strong>GOPROXY</strong>。</p>
+<p>我们知道从 <code>Go 1.11</code> 版本开始，官方支持了 <code>go module</code> 包依赖管理工具。</p>
+<p>其实还新增了 <code>GOPROXY</code> 环境变量。如果设置了该变量，下载源代码时将会通过这个环境变量设置的代理地址，而不再是以前的直接从代码库下载。这无疑对我等无法科学上网的开发良民来说是最大的福音。</p>
+<p>更可喜的是，<a href="https://github.com/goproxyio/goproxy">goproxy.io</a> 这个开源项目帮我们实现好了我们想要的。该项目允许开发者一键构建自己的 <code>GOPROXY</code> 代理服务。同时，也提供了公用的代理服务 <code>https://goproxy.io</code>，我们只需设置该环境变量即可正常下载被墙的源码包了：</p>
+<table>
+<thead>
+<tr>
+<th><code>1</code></th>
+<th><code>export GOPROXY=https://goproxy.io</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>不过，<strong>需要依赖于 <code>go module</code> 功能</strong>。可通过 <code>export GO111MODULE=on</code> 开启 MODULE。</p>
+<p>如果项目不在 <code>GOPATH</code> 中，则无法使用 <code>go get ...</code>，但可以使用 <code>go mod ...</code> 相关命令。</p>
+<p>也可以通过置空这个环境变量来关闭，<code>export GOPROXY=</code>。</p>
+<p>对于 Windows 用户，可以在 <code>PowerShell</code> 中设置：</p>
+<table>
+<thead>
+<tr>
+<th><code>1</code></th>
+<th><code>$env:GOPROXY = "https://goproxy.io"</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>最后，我们当然推荐使用 <code>GOPROXY</code> 这个环境变量的解决方式，前提是 <strong>Go version &gt;= 1.11</strong>。</p>
+<p>最后的最后，七牛也出了个国内代理 <a href="https://github.com/goproxy/goproxy.cn">goproxy.cn</a> 方便国内用户更快的访问不能访问的包，真是良心。</p>
+<h2 id="_5">参考资料</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/COethtOaiygsYev-kkCc4A">goproxy.io for Go modules</a></li>
+<li><a href="https://goproxy.io/">goproxy.io</a></li>
+<li><a href="https://github.com/goproxy/goproxy.cn">goproxy.cn</a></li>
+</ul>
+<pre><code>jupyter notebook --allow-root --log-level DEBUG  
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

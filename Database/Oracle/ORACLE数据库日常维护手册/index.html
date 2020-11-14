@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AIQ">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>ORACLE数据库日常维护手册 - MySkill</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">MySkill</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GaussDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../GaussDB/GaussDB考试认证指南/">GaussDB考试认证指南</a>
+</li>
+            
+<li >
+    <a href="../../GaussDB/HCIP-GaussDB-OLTP_V1.0考试大纲/">HCIP-GaussDB-OLTP_V1.0考试大纲</a>
+</li>
+            
+<li >
+    <a href="../../GaussDB/HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训/">HCIP-GaussDB-OLTP_华为数据库高级工程师认证培训</a>
+</li>
+            
+<li >
+    <a href="../../GaussDB/模拟试卷/">模拟试卷</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mysql</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/Mysql/">Mysql</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/Mysql_OCP/">Mysql_OCP</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">basic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/Select/">Select</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">InndbArchitecture</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/InndbArchitecture/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SQL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Alter_Database/">Alter_Database</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Alter_View/">Alter_View</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateDatabase/">CreateDatabase</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateIndex/">CreateIndex</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateTable/">CreateTable</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/CreateView/">CreateView</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Create_Table_2/">Create_Table_2</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Cursor/">Cursor</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Delete/">Delete</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Funtion/">Funtion</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Instert&Update/">Instert&Update</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/MySQL指定账号加密方式的方法/">MySQL指定账号加密方式的方法</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Select/">Select</a>
+</li>
+            
+<li >
+    <a href="../../Mysql/basic/SQL/Untitled/">Untitled</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Oracle</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Database_Architacture/">Database_Architacture</a>
+</li>
+            
+<li >
+    <a href="../Oracle/">Oracle</a>
+</li>
+            
+<li >
+    <a href="../Rman/">Rman</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Rac</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Rac/GridInstall/">GridInstall</a>
+</li>
+            
+<li >
+    <a href="../Rac/RACBuild/">RACBuild</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Rac/ASM/ASM创建失败分析/">ASM创建失败分析</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Life/日本使馆各职能部门/">日本使馆各职能部门</a>
+</li>
+                                    
+<li >
+    <a href="../../../Life/确定一个可操作的目标/">确定一个可操作的目标</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">GeneralEducation</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Wine</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒/">酒</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒的误区/">酒的误区</a>
+</li>
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/酒精中毒/">酒精中毒</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">define</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/GeneralEducation/Wine/define/乙醛脱氢酶/">乙醛脱氢酶</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">梦呓</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Life/梦呓/模板/">模板</a>
+</li>
+            
+<li >
+    <a href="../../../Life/梦呓/模板_(copy)/">模板_(copy)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">BasicCommand</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Linux/BasicCommand/fdisk/">fdisk</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#oracle">ORACLE数据库日常维护手册(最全+最实用)</a></li>
+            <li><a href="#_1">查看数据库版本</a></li>
+            <li><a href="#_2">查看数据库语言环境</a></li>
+            <li><a href="#oracle_1">查看ORACLE实例状态</a></li>
+            <li><a href="#oracle_2">查看ORACLE监听状态</a></li>
+            <li><a href="#_3">查看数据库归档模式</a></li>
+            <li><a href="#_4">查看回收站中对象</a></li>
+            <li><a href="#_5">清空回收站中对象</a></li>
+            <li><a href="#_6">还原回收站中的对象</a></li>
+            <li><a href="#_7">闪回误删除的表</a></li>
+            <li><a href="#_8">闪回表中记录到某一时间点</a></li>
+            <li><a href="#ddl">查看DDL锁</a></li>
+            <li><a href="#_9">检查等待事件</a></li>
+            <li><a href="#_10">检查数据文件状态</a></li>
+            <li><a href="#_11">检查表空间使用情况</a></li>
+            <li><a href="#_12">收缩表空间</a></li>
+            <li><a href="#_13">增加表空间大小</a></li>
+            <li><a href="#_14">检查不起作用的约束</a></li>
+            <li><a href="#_15">检查发生坏块的数据库对象</a></li>
+            <li><a href="#_16">检查无效的数据库对象</a></li>
+            <li><a href="#_17">查看语句执行进度</a></li>
+            <li><a href="#_18">检查碎片程度高的表</a></li>
+            <li><a href="#io">检查表空间的 I/O 比例</a></li>
+            <li><a href="#_19">检查碎片程度高的表</a></li>
+            <li><a href="#io_1">检查文件系统的 I/O 比例</a></li>
+            <li><a href="#cpu">检查消耗CPU最高的进程</a></li>
+            <li><a href="#sql">检查运行很久的SQL</a></li>
+            <li><a href="#5">等待时间最多的5个系统等待事件的获取</a></li>
+            <li><a href="#sql_1">查找前十条性能差的SQL</a></li>
+            <li><a href="#_20">检查死锁</a></li>
+            <li><a href="#job">查看正在运行的JOB</a></li>
+            <li><a href="#job_1">检查数据库JOB的完成情况</a></li>
+            <li><a href="#jobsidserialspid">查看正在运行的JOB对应的SID、SERIAL#、SPID</a></li>
+            <li><a href="#sid">通过SID查询</a></li>
+            <li><a href="#_21">停止会话</a></li>
+            <li><a href="#_22">操作系统级别</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<div class="toc">
+<ul>
+<li><a href="#oracle">ORACLE数据库日常维护手册(最全+最实用)</a><ul>
+<li><a href="#_1">查看数据库版本</a></li>
+<li><a href="#_2">查看数据库语言环境</a></li>
+<li><a href="#oracle_1">查看ORACLE实例状态</a></li>
+<li><a href="#oracle_2">查看ORACLE监听状态</a></li>
+<li><a href="#_3">查看数据库归档模式</a></li>
+<li><a href="#_4">查看回收站中对象</a></li>
+<li><a href="#_5">清空回收站中对象</a></li>
+<li><a href="#_6">还原回收站中的对象</a></li>
+<li><a href="#_7">闪回误删除的表</a></li>
+<li><a href="#_8">闪回表中记录到某一时间点</a></li>
+<li><a href="#ddl">查看DDL锁</a></li>
+<li><a href="#_9">检查等待事件</a></li>
+<li><a href="#_10">检查数据文件状态</a></li>
+<li><a href="#_11">检查表空间使用情况</a></li>
+<li><a href="#_12">收缩表空间</a></li>
+<li><a href="#_13">增加表空间大小</a></li>
+<li><a href="#_14">检查不起作用的约束</a></li>
+<li><a href="#_15">检查发生坏块的数据库对象</a></li>
+<li><a href="#_16">检查无效的数据库对象</a></li>
+<li><a href="#_17">查看语句执行进度</a></li>
+<li><a href="#_18">检查碎片程度高的表</a></li>
+<li><a href="#io">检查表空间的 I/O 比例</a></li>
+<li><a href="#_19">检查碎片程度高的表</a></li>
+<li><a href="#io_1">检查文件系统的 I/O 比例</a></li>
+<li><a href="#cpu">检查消耗CPU最高的进程</a></li>
+<li><a href="#sql">检查运行很久的SQL</a></li>
+<li><a href="#5">等待时间最多的5个系统等待事件的获取</a></li>
+<li><a href="#sql_1">查找前十条性能差的SQL</a></li>
+<li><a href="#_20">检查死锁</a></li>
+<li><a href="#job">查看正在运行的JOB</a></li>
+<li><a href="#job_1">检查数据库JOB的完成情况</a></li>
+<li><a href="#jobsidserialspid">查看正在运行的JOB对应的SID、SERIAL#、SPID</a></li>
+<li><a href="#sid">通过SID查询</a></li>
+<li><a href="#_21">停止会话</a></li>
+<li><a href="#_22">操作系统级别</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="oracle">ORACLE数据库日常维护手册(最全+最实用)</h1>
+<h2 id="_1">查看数据库版本</h2>
+<pre><code class="mysql">SELECT  * FROM V$VERSION;
+</code></pre>
+
+<h2 id="_2">查看数据库语言环境</h2>
+<pre><code class="mysql">SELECT  USERENV('LANGUAGE') FROM DUAL;
+</code></pre>
+
+<h2 id="oracle_1">查看ORACLE实例状态</h2>
+<pre><code class="mysql">SELECT INSTANCE_NAME,HOST_NAME,STARTUP_TIME,STATUS,DATABASE_STATUS
+FROM V$INSTANCE;
+</code></pre>
+
+<h2 id="oracle_2">查看ORACLE监听状态</h2>
+<p><code>lsnrctl status</code></p>
+<h2 id="_3">查看数据库归档模式</h2>
+<pre><code class="mysql">SELECT  NAME,LOG_MODE,OPEN_MODE FROM V$DATABASE;
+</code></pre>
+
+<h2 id="_4">查看回收站中对象</h2>
+<pre><code class="mysql">SELECT  OBJECT_NAME,ORIGINAL_NAME,TYPE FROM RECYCLEBIN;
+</code></pre>
+
+<h2 id="_5">清空回收站中对象</h2>
+<p><code>PURGE RECYCLEBIN;</code></p>
+<h2 id="_6">还原回收站中的对象</h2>
+<pre><code class="mysql">FLASHBACK  TABLE &quot;BIN$GOZUQZ6GS222JZDCCTFLHQ==$0&quot; TO BEFORE DROP RENAME TO TEST;
+</code></pre>
+
+<h2 id="_7">闪回误删除的表</h2>
+<pre><code class="mysql">FLASHBACK  TABLE AAA TO BEFORE DROP;
+</code></pre>
+
+<h2 id="_8">闪回表中记录到某一时间点</h2>
+<pre><code class="mysql">ALTER  TABLE TEST ENABLE ROW MOVEMENT;
+</code></pre>
+
+<pre><code class="mysql">FLASHBACK  TABLE TEST TO_TIMESTAMP('2009-10-15 21:17:47','YYYY-MM-DD HH24:MI:SS');
+​``` 
+查看当前会话
+​```mysql
+SELECT  SID,SERIAL#,USERNAME,PROGRAM,MACHINE,STATUS FROM V$SESSION;
+</code></pre>
+
+<h2 id="ddl">查看DDL锁</h2>
+<pre><code class="mysql">SELECT  *
+FROM DBA_DDL_LOCKS
+WHERE OWNER = 'FWYANG';
+</code></pre>
+
+<h2 id="_9">检查等待事件</h2>
+<pre><code class="mysql">SELECT  SID, A.USERNAME, EVENT, WAIT_CLASS, T1.SQL_TEXT
+FROM V$SESSION A, V$SQLAREA T1
+WHERE WAIT_CLASS  'Idle'
+AND A.SQL_ID = T1.SQL_ID;
+</code></pre>
+
+<h2 id="_10">检查数据文件状态</h2>
+<pre><code class="mysql">SELECT  FILE_NAME,STATUS FROM DBA_DATA_FILES;
+</code></pre>
+
+<h2 id="_11">检查表空间使用情况</h2>
+<pre><code class="mysql">SELECT UPPER(F.TABLESPACE_NAME) &quot;表空间名&quot;,
+D.TOT_GROOTTE_MB &quot;表空间大小(M)&quot;,
+D.TOT_GROOTTE_MB - F.TOTAL_BYTES &quot;已使用空间(M)&quot;,
+TO_CHAR(ROUND((D.TOT_GROOTTE_MB - F.TOTAL_BYTES) / D.TOT_GROOTTE_MB * 100,2),'990.99') &quot;使用比&quot;,
+F.TOTAL_BYTES &quot;空闲空间(M)&quot;,
+F.MAX_BYTES &quot;最大块(M)&quot;  FROM (SELECT TABLESPACE_NAME,  ROUND(SUM(BYTES) / (1024 * 1024), 2) TOTAL_BYTES,  ROUND(MAX(BYTES) / (1024 * 1024), 2) MAX_BYTES  FROM SYS.DBA_FREE_SPACE  GROUP BY TABLESPACE_NAME) F,  (SELECT DD.TABLESPACE_NAME,  ROUND(SUM(DD.BYTES) / (10http://www.mianfeiwendang.com/doc/dba9a779825b68483416ac9624 * 1024), 2) TOT_GROOTTE_MB  FROM SYS.DBA_DATA_FILES DD  GROUP BY DD.TABLESPACE_NAME) D  WHERE D.TABLESPACE_NAME = F.TABLESPACE_NAME  ORDER BY 4 DESC;
+</code></pre>
+
+<h2 id="_12">收缩表空间</h2>
+<pre><code class="mysql">ALTER   TABLESPCE TS_AJ_DATA COALESCE;
+</code></pre>
+
+<h2 id="_13">增加表空间大小</h2>
+<pre><code class="mysql">SELECT  T.TABLESPACE_NAME, T.FILE_NAME, T.BYTES / 1024 / 1024 / 1024   FROM DBA_DATA_FILES T
+WHERE T.TABLESPACE_NAME = 'TS_AJ_DATA';
+</code></pre>
+
+<pre><code class="mysql">ALTER   TABLESPACE TS_AJ_DATA ADD DATAFILE '/DATA/TS_AJ_DATA05_10G.DBF'  SIZE 10000M
+AUTOEXTEND OFF;
+</code></pre>
+
+<h2 id="_14">检查不起作用的约束</h2>
+<pre><code class="mysql">SELECT  OWNER, CONSTRAINT_NAME, TABLE_NAME, CONSTRAINT_TYPE, STATUS   FROM DBA_CONSTRAINTS
+WHERE STATUS = 'DISABLE';
+</code></pre>
+
+<h2 id="_15">检查发生坏块的数据库对象</h2>
+<pre><code class="mysql">SELECT  TABLESPACE_NAME, SEGMENT_TYPE, OWNER, SEGMENT_NAME
+FROM DBA_EXTENTS
+WHERE FILE_ID =
+AND  BETWEEN BLOCK_ID AND BLOCK_ID   BLOCKS - 1;
+</code></pre>
+
+<h2 id="_16">检查无效的数据库对象</h2>
+<pre><code class="mysql">SELECT OWNER,OBJECT_NAME,OBJECT_TYPE
+FROM DBA_OBJECTS
+WHERE STATUS ='INVALID';
+</code></pre>
+
+<h2 id="_17">查看语句执行进度</h2>
+<pre><code class="mysql">SELECT SE.SID,
+OPNAME,
+TRUNC(SOFAR / TOTALWORK * 100, 2) || '%' AS PCT_WORK,
+ELAPSED_SECONDS ELAPSED,
+ROUND(ELAPSED_SECONDS * (TOTALWORK - SOFAR) / SOFAR) REMAIN_TIME,        SQL_TEXT
+FROM V$SESSION_LONGOPS SL, V$SQLAREA SA, V$SESSION SE  WHERE SL.SQL_HASH_VALUE = SA.HASH_VALUE
+AND SL.SID = SE.SID
+AND SOFAR != TOTALWORK
+ORDER BY START_TIME;
+</code></pre>
+
+<h2 id="_18">检查碎片程度高的表</h2>
+<pre><code class="mysql">SELECT  SEGMENT_NAME TABLE_NAME, COUNT(*) EXTENTS
+FROM DBA_SEGMENTS
+WHERE OWNER NOT IN ('SYS', 'SYSTEM')
+GROUP BY SEGMENT_NAME
+HAVING COUNT(*) = (SELECT MAX(COUNT(*))
+FROM DBA_SEGMENTS
+GROUP BY SEGMENT_NAME);
+</code></pre>
+
+<h2 id="io">检查表空间的 I/O 比例</h2>
+<pre><code class="mysql">SELECT  DF.TABLESPACE_NAME NAME,
+DF.FILE_NAME       &quot;FILE&quot;,
+F.PHYRDS           PYR,
+F.PHYBLKRD        PBR,
+F.PHYWRTS          PYW,
+F.PHYBLKWRT        PBW
+FROM V$FILESTAT F, DBA_DATA_FILES DF
+WHERE F.FILE# = DF.FILE_ID
+ORDER BY DF.TABLESPACE_NAME;
+</code></pre>
+
+<h2 id="_19">检查碎片程度高的表</h2>
+<pre><code class="mysql">SELECT segment_name table_name, COUNT(*) extents
+FROM dba_segments
+WHERE owner NOT IN ('SYS', 'SYSTEM')
+GROUP BY segment_name
+HAVING COUNT(*) = (SELECT MAX(COUNT(*))
+FROM dba_segments
+GROUP BY segment_name);
+</code></pre>
+
+<h2 id="io_1">检查文件系统的 I/O 比例</h2>
+<pre><code class="mysql">
+SELECT  SUBSTR(A.FILE#, 1, 2) &quot;#&quot;,
+SUBSTR(A.NAME, 1, 30) &quot;NAME&quot;,
+A.STATUS,
+A.BYTES,
+B.PHYRDS,
+B.PHYWRTS
+FROM V$DATAFILE A, V$FILESTAT B
+WHERE A.FILE# = B.FILE#;
+</code></pre>
+
+<h2 id="cpu">检查消耗CPU最高的进程</h2>
+<pre><code class="mysql">SELECT P.PID PID,
+S.SID SID,
+P.SPID SPID,
+S.USERNAME USERNAME,
+S.OSUSER OSNAME,
+P.SERIAL# S_#,
+P.TERMINAL,
+P.PROGRAM PROGRAM,
+P.BACKGROUND,
+S.STATUS,
+RTRIM(SUBSTR(A.SQL_TEXT, 1, 80)) SQLFROM
+FROM V$PROCESS P, V$SESSION S, V$SQLAREA A
+WHERE P.ADDR = S.PADDR
+AND S.SQL_ADDRESS = A.ADDRESS( )
+AND P.SERIAL#  '1';
+</code></pre>
+
+<h2 id="sql">检查运行很久的SQL</h2>
+<pre><code class="mysql">SELECT  USERNAME,
+SID,
+OPNAME,
+ROUND(SOFAR * 100 / TOTALWORK, 0) || '%' AS PROGRESS,        TIME_REMAINING,
+SQL_TEXT
+FROM V$SESSION_LONGOPS, V$SQL
+WHERE TIME_REMAINING  0
+AND SQL_ADDRESS = ADDRESS
+AND SQL_HASH_VALUE = HASH_VALUE;
+</code></pre>
+
+<h2 id="5">等待时间最多的5个系统等待事件的获取</h2>
+<pre><code class="mysql">SELECT  *
+FROM (SELECT *
+FROM V$SYSTEM_EVENT
+WHERE EVENT NOT LIKE 'SQL%'
+ORDER BY TOTAL_WAITS DESC)
+WHERE ROWNUM&lt;6;
+</code></pre>
+
+<h2 id="sql_1">查找前十条性能差的SQL</h2>
+<pre><code class="mysql">SELECT  *
+FROM (SELECT PARSING_USER_ID EXECUTIONS,
+SORTS,
+COMMAND_TYPE,
+DISK_READS,
+SQL_TEXT
+FROM V$SQLAREA
+ORDER BY DISK_READS DESC)
+WHERE ROWNUM &lt;11;
+</code></pre>
+
+<h2 id="_20">检查死锁</h2>
+<pre><code class="mysql">SELECT    bs.username &quot;Blocking User&quot;, bs.username &quot;DB User&quot;,
+ws.username &quot;Waiting User&quot;, bs.SID &quot;SID&quot;, ws.SID &quot;WSID&quot;,          bs.serial# &quot;Serial#&quot;, bs.sql_address &quot;address&quot;,
+bs.sql_hash_value &quot;Sql hash&quot;, bs.program &quot;Blocking App&quot;,          ws.program &quot;Waiting App&quot;, bs.machine &quot;Blocking Machine&quot;,          ws.machine &quot;Waiting Machine&quot;, bs.osuser &quot;Blocking OS User&quot;,          ws.osuser &quot;Waiting OS User&quot;, bs.serial# &quot;Serial#&quot;,
+ws.serial# &quot;WSerial#&quot;,
+DECODE (wk.TYPE,
+'MR', 'Media Recovery',
+'RT', 'Redo Thread',
+'UN', 'USER Name',
+'TX', 'Transaction',
+'TM', 'DML',
+'UL', 'PL/SQL USER LOCK',
+'DX', 'Distributed Xaction',
+'CF', 'Control FILE',
+'IS', 'Instance State',
+'FS', 'FILE SET',
+'IR', 'Instance Recovery',
+'ST', 'Disk SPACE Transaction',
+'TS', 'Temp Segment',
+'IV', 'Library Cache Invalidation',
+'LS', 'LOG START OR Switch',
+'RW', 'ROW Wait',
+'SQ', 'Sequence Number',
+'TE', 'Extend TABLE',
+'TT', 'Temp TABLE',
+wk.TYPE
+) lock_type,
+DECODE (hk.lmode,
+0, 'None',
+1, 'NULL',
+2, 'ROW-S (SS)',
+3, 'ROW-X (SX)',
+4, 'SHARE',
+5, 'S/ROW-X (SSX)',
+6, 'EXCLUSIVE',
+TO_CHAR (hk.lmode)
+) mode_held,
+DECODE (wk.request,
+0, 'None',
+1, 'NULL',
+2, 'ROW-S (SS)',
+3, 'ROW-X (SX)',
+4, 'SHARE',
+5, 'S/ROW-X (SSX)',
+6, 'EXCLUSIVE',
+TO_CHAR (wk.request)
+) mode_requested,
+TO_CHAR (hk.id1) lock_id1, TO_CHAR (hk.id2) lock_id2,          DECODE
+(hk.BLOCK,0, 'NOT Blocking',   /* Not blocking any other processes */
+1, 'Blocking',             /* This lock blocks other processes */
+2, 'Global',         /* This lock is global, so we can't tell */
+TO_CHAR (hk.BLOCK)
+) blocking_others
+FROM v$lock hk, v$session bs, v$lock wk, v$session ws    WHERE hk.BLOCK = 1
+AND hk.lmode != 0
+AND hk.lmode != 1
+AND wk.request != 0
+AND wk.TYPE( ) = hk.TYPE
+AND wk.id1( ) = hk.id1
+AND wk.id2( ) = hk.id2
+AND hk.SID = bs.SID( )
+AND wk.SID = ws.SID( )
+AND (bs.username IS NOT NULL)
+AND (bs.username  'SYSTEM')
+AND (bs.username  'SYS')
+ORDER BY 1;
+</code></pre>
+
+<h2 id="job">查看正在运行的JOB</h2>
+<pre><code class="mysql">SELECT  * FROM DBA_JOBS_RUNNING;
+</code></pre>
+
+<h2 id="job_1">检查数据库JOB的完成情况</h2>
+<pre><code class="mysql">SELECT  JOB, LOG_USER, LAST_DATE, NEXT_DATE, WHAT, FAILURES  FROM DBA_JOBS;
+</code></pre>
+
+<h2 id="jobsidserialspid">查看正在运行的JOB对应的SID、SERIAL#、SPID</h2>
+<pre><code class="mysql">SELECT  A.JOB, B.SID, B.SERIAL#, C.SPID
+FROM DBA_JOBS_RUNNING A, V$SESSION B, V$PROCESS C  WHERE A.SID = B.SID
+AND B.PADDR = C.ADDR
+AND JOB = '21';
+</code></pre>
+
+<h2 id="sid">通过SID查询</h2>
+<pre><code class="mysql">SERIAL#、SPID SELECT B.SID, B.SERIAL#, C.SPID   FROM V$SESSION B, V$PROCESS C  WHERE B.SID = '554'
+AND B.PADDR = C.ADDR;
+</code></pre>
+
+<h2 id="_21">停止会话</h2>
+<p>--SID:554 SERIAL#:1134 SPID:23242 ORACLE级别</p>
+<pre><code class="mysql">ALTER   SYSTEM KILL SESSION '554,1134';
+</code></pre>
+
+<h2 id="_22">操作系统级别</h2>
+<p><code>kill -9 23242</code> </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>CallMe:Byyelang@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
